@@ -481,7 +481,7 @@ Använd denna mall innan publicering:
 - SportAdmin-regler uppfyllda: `Ja/Nej`
 - Öppen risk/notering: `...`
 
----
+----
 
 ## 17) Copy- och innehållsregler (mikrostandard)
 
