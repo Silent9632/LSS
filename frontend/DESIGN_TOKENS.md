@@ -526,7 +526,40 @@ Använd denna mall innan publicering:
 
 ---
 
-## 18) Ändringslogg för detta dokument
+## 18) Premium Clean-recept (global standard)
+
+Syfte: samma premiumkänsla på alla innehållssidor utan att göra designen plottrig.
+
+### 18.1 Kärnprinciper
+- Premium = lugn hierarki, hög läsbarhet, konsekvent rytm.
+- Effekter ska vara diskreta och får aldrig konkurrera med innehållet.
+- En sida ska ha en tydlig visuell "ryggrad": samma kortstruktur, samma spacing, samma CTA-logik.
+
+### 18.2 Komponentregler
+- **Sektionkort:** använd samma kortram överallt (`border-radius:20px`, diskret border, mjuk skugga).
+- **Skugga (premium-låg):** föredra `box-shadow: 0 6px 20px rgba(0,90,153,0.07)` för innehållskort.
+- **Mellanblock/tipsrutor:** lägre visuell vikt än huvudkort (ljus bakgrund, tunn border, ingen tung skugga).
+- **Filmkort:** hela filmytan ska vara klickbar (thumbnail + play-overlay + badge i samma länk).
+- **Rörligt innehåll:** undvik GIF/video som standard. Om det används, håll det diskret och sekundärt.
+
+### 18.3 CTA-hierarki (obligatorisk)
+- Max 1 primär CTA per sektion (fylld blå knapp).
+- Övriga CTA i samma grupp ska vara sekundära (outline/ljus bakgrund).
+- Primär CTA ska motsvara sidans huvudmål (t.ex. `Boka simskola`).
+
+### 18.4 Spacing-rytm (obligatorisk)
+- Mellan huvudsektioner: konsekvent (rekommenderat `margin-bottom:24px`).
+- Inre kortpadding: konsekvent (rekommenderat `padding:28px` för större innehållskort).
+- Rubrikblock ska ha samma vertikala rytm på alla sektioner.
+
+### 18.5 "Gör inte"
+- Ingen tung visuell konkurrens (flera starka gradienter, många skugglager, blinkande/rörliga element).
+- Ingen blandad CTA-stil där alla knappar ser primära ut.
+- Ingen avvikande layoutlogik på enstaka sektioner utan tydlig anledning.
+
+---
+
+## 19) Ändringslogg för detta dokument
 
 När denna fil uppdateras, lägg till rad här:
 
@@ -535,6 +568,7 @@ När denna fil uppdateras, lägg till rad här:
 Exempel:
 - `2026-02-13` - lade till DoD, avvikelseregler och audit-mall för mer konsekventa AI-ändringar.
 - `2026-02-15` - lade till standard for e-post CTA med mailto-fallback och kopierbar e-postadress for enhetlig UX.
+- `2026-02-15` - lade till Premium Clean-recept (sektionkort, CTA-hierarki, spacing-rytm, filmklickyta) för enhetlig premiumdesign på alla sidor.
 
 
 
