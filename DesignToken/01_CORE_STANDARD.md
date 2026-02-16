@@ -41,7 +41,7 @@ Undvik egna varianter om motsvarande komponent redan finns i dokumentet.
 ```html
 <div style="margin:0;background:#f3f7fb;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#1a1a1a;">
   <div style="min-height:100vh;padding:40px 20px;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#edf6fc 0%,#f4f9ff 30%,#eef6fc 60%,#f7fbff 100%);">
-    <div style="max-width:895px;margin:0 auto;">
+    <div style="max-width:850px;margin:0 auto;">
       <!-- Innehåll -->
     </div>
   </div>
@@ -49,7 +49,7 @@ Undvik egna varianter om motsvarande komponent redan finns i dokumentet.
 ```
 
 ### Layout-tokens
-- `max-width`: `895px`
+- `max-width`: `850px`
 - `container-padding`: `40px 20px`
 - `section-gap`: `18px`
 - `main-card-padding`: `24px`
@@ -159,7 +159,7 @@ Om kommandot returnerar träffar ska de rättas innan publicering.
 ## 10) Checklista före publicering
 
 1. Samma grundwrapper används.
-2. `max-width:895px` används.
+2. `max-width:850px` används.
 3. Huvudkort följer kortsystemet.
 4. Knappar följer 13x24 / 10x16 + radius 6.
 5. Alla länkar matchar avsnitt 8.

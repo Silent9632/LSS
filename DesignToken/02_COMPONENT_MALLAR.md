@@ -146,4 +146,56 @@ Rekommenderad mall:
 </section>
 ```
 
+---
+
+## 6.3) Produktsida (premium, subtil)
+
+Anvands pa alla produktsidor under `frontend/Hem/` for en enhetlig premiumkansla.
+
+Regler:
+- En huvudsektion (undvik separat rubrik-box ovanfor innehallet).
+- Visuell ordning: tillbaka-lank -> chips (kopstalle + pris) -> 2-kolumners produktgrid.
+- Ingen egen H1 i HTML-blocket pa produktsidan (SportAdmin visar sidrubriken ovanfor).
+- Produktbeskrivning ligger under bilden (inte under H1 i egen box).
+- Kort i produktgrid ska ha mjukare premium-stil:
+  - `border-radius:16px`
+  - `box-shadow:0 5px 14px rgba(0,90,153,0.08)`
+- Bildyta:
+  - `height:310px`
+  - subtil gradientbakgrund i bilden.
+- Finjusteringar:
+  - yttre wrapper: `padding:24px 20px 40px 20px`
+  - tillbaka-lank: `margin:0 0 10px 0`
+  - produkt-caption under bild: `margin:10px 0 4px 0;color:#6f8799;font-size:11px;font-weight:500;`
+  - beskrivning efter caption: `margin:8px 0 0 0`
+  - variant-rader i hogerkort: `line-height:1.65`
+
+Rekommenderad mall:
+
+```html
+<section style="background:rgba(255,255,255,0.88);border:1px solid rgba(0,90,153,0.12);border-radius:20px;box-shadow:0 6px 20px rgba(0,90,153,0.07);padding:24px;margin-bottom:18px;">
+  <a href="https://ljungbyss.web.sportadmin.se/sida/?ID=575279" style="display:inline-flex;align-items:center;gap:6px;margin:0 0 10px 0;color:#005a99;text-decoration:none;font-size:13px;font-weight:700;">&larr; Tillbaka till webbshop</a>
+
+  <div style="display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px 0;">
+    <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #d7e7f7;background:#f5fbff;color:#2f4c61;font-size:12px;font-weight:700;">K&ouml;pst&auml;lle: Profilh&ouml;rnan</span>
+    <span style="display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #d7e7f7;background:#f5fbff;color:#2f4c61;font-size:12px;font-weight:700;">Pris: 000 kr</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;align-items:start;">
+    <article style="background:#ffffff;border:1px solid rgba(0,90,153,0.12);border-radius:16px;box-shadow:0 5px 14px rgba(0,90,153,0.08);padding:16px;">
+      <div style="width:100%;height:310px;background:linear-gradient(180deg,#f8fcff 0%,#f2f9ff 100%);border:1px solid #dde9f5;border-radius:12px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
+        <img src="..." alt="..." style="width:100%;height:100%;object-fit:contain;">
+      </div>
+      <p style="margin:10px 0 4px 0;color:#6f8799;font-size:11px;font-weight:500;letter-spacing:0.01em;">Produktnamn</p>
+      <p style="margin:8px 0 0 0;color:#2f4c61;line-height:1.6;font-size:14px;">Kort produktbeskrivning.</p>
+    </article>
+
+    <article style="background:#ffffff;border:1px solid rgba(0,90,153,0.12);border-radius:16px;box-shadow:0 5px 14px rgba(0,90,153,0.08);padding:16px;">
+      <!-- varianter, material, pris, karta, kopinfo -->
+    </article>
+  </div>
+</section>
+```
+
+
 

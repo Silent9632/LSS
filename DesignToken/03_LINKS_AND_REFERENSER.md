@@ -32,9 +32,12 @@ Kontaktportal-specifikt:
 - Öva i vatten: https://www.ljungbyss.se/sida/?ID=161890
 - Tider och perioder / Veckoschema: https://www.ljungbyss.se/sida/?ID=332769
 - Vanligt ställda frågor: https://ljungbyss.web.sportadmin.se/sida/?ID=436599
-- Kontaktportal: https://www.ljungbyss.se/start/?ID=460051
+- Kontaktportal: https://www.ljungbyss.se/sida/?ID=591089
+- Om klubben: https://ljungbyss.web.sportadmin.se/sida/?ID=50236
 - Kontaktuppgifter: https://ljungbyss.web.sportadmin.se/sida/?ID=576221
+- Styrelse och ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576222
 - Bli ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576223
+- Hjälp till i LSS: https://ljungbyss.web.sportadmin.se/sida/?ID=590922
 - Webshop: https://ljungbyss.web.sportadmin.se/sida/?ID=575279
 - Ljungby SS historia: https://ljungbyss.web.sportadmin.se/sida/?ID=161875
 
