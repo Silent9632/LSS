@@ -15,6 +15,7 @@ Exempel:
 - `2026-02-15` - lade till `AGENTS.md` i repo-roten med regel att läsa `DesignToken/INDEX.md` först vid designarbete.
 - `2026-02-15` - lade till uttrycklig regel: undvik inline `<svg>` i projektets komponenter/placeholder (whitelist + stabilitetsproblem i Live Server preview).
 - `2026-02-15` - lade till SVG-policy: extern SVG via `<img>` som standard, inline SVG endast efter explicit beslut och dubbeltest (lokalt + SportAdmin).
+- `2026-02-15` - uppdaterade webshoplänkar i `frontend/Hem/Webshop.html` och la in full produktlista i `DesignToken/03_LINKS_AND_REFERENSER.md`; noterat att Craft Evolve Pants tillfälligt pekar till `ID=575513` (saknad separat länk i underlag).
 
 
 
