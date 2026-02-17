@@ -63,6 +63,9 @@ Webshop-produktlänkar:
 Externa referenser:
 - W3C: https://www.w3.org/
 
+Bildreferenser:
+- Ljungby Simsällskap logotyp: https://cdn.sportadmin.se/699/h/253/da7e82b6b03eada009368cf8c5fa4e1d313be4184507039b9319f6dd4d4bcde7_L.png
+
 ---
 
 

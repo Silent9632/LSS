@@ -50,10 +50,15 @@ Undvik egna varianter om motsvarande komponent redan finns i dokumentet.
 
 ### Layout-tokens
 - `max-width`: `850px`
+- `inlägg-small-max-width`: `597px`
 - `container-padding`: `40px 20px`
 - `section-gap`: `18px`
 - `main-card-padding`: `24px`
 - `sub-card-padding`: `16px`
+
+### Inläggsbredder (SportAdmin)
+- `small` inlägg = `max-width:597px`
+- Om användaren säger "small" ska `597px` användas som maxbredd för inläggets huvudcontainer.
 
 ---
 
