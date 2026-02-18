@@ -65,6 +65,7 @@ Externa referenser:
 
 Bildreferenser:
 - Ljungby Simsällskap logotyp: https://cdn.sportadmin.se/699/h/253/da7e82b6b03eada009368cf8c5fa4e1d313be4184507039b9319f6dd4d4bcde7_L.png
+- Ljungby Simsällskap logotyp (clean, transparent PNG): https://cdn.sportadmin.se/699/h/253/f76b3ec1fcf0904d98ef45fd1ba04000e8dc40ccd90c051d5bfb81d5d157cad0_L.png
 
 ---
 
