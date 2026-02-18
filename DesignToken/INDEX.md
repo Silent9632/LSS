@@ -26,3 +26,8 @@ Använd denna fil som startpunkt. Läs alltid `01_CORE_STANDARD.md` först och d
 - Nya regler läggs i rätt del-fil, inte i index.
 - Vid ny fil i `frontend`: uppdatera `frontend/Meny.html` i samma ändring (om inte användaren uttryckligen säger nej).
 - Behåll svenska tecken korrekt (UTF-8).
+
+## Hård kontroll: arbetsmapp innan ändring
+- Kontrollera alltid aktiv projektrot innan filändringar.
+- Om användaren anger en specifik sökväg (t.ex. `C:\Users\Tommy\- Projects\LSS`) ska ändringar göras där, inte i en annan klon.
+- Om aktiv arbetsmapp inte matchar angiven sökväg: stoppa och bekräfta/byt arbetsmapp först.
