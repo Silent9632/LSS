@@ -18,3 +18,11 @@
 ## Menu sync rule
 - If a new page file is created in `frontend`, add it to `frontend/Meny.html` in the same change.
 - Exception: if user explicitly says not to include it in menu.
+
+## Arbetsmapp (obligatorisk)
+- Arbeta endast i `C:\Users\Tommy\- Projects\LSS`.
+- Använd inte andra kloner av projektet (t.ex. `C:\Users\Tommy\LSS\LSS`).
+
+## Chattnamn
+- Alla nya chattar ska döpas enligt formatet `<Projekt> - <ämne>`.
+- För detta projekt ska formatet vara `LSS - <ämne>`.
