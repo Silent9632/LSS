@@ -1,197 +1,208 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hj&auml;lp till i LSS - Experiment</title>
-  <style>
-    :root{--ink:#14213d;--soft:#51627d;--line:rgba(20,33,61,.1);--coral:#ff6b57;--teal:#27b3a7;--gold:#f3c14f;--shadow:0 20px 60px rgba(20,33,61,.12);--radius:28px;--max:1120px}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at top left,rgba(39,179,167,.18),transparent 28%),radial-gradient(circle at top right,rgba(255,107,87,.15),transparent 22%),linear-gradient(180deg,#fff7ee 0%,#f7fbff 52%,#fffdf8 100%)}
-    img{display:block;max-width:100%} a{text-decoration:none;color:inherit}.wrap{width:min(var(--max),calc(100% - 28px));margin:0 auto}.section{padding:24px 0}.card{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
-    .hero{padding:22px 0 12px}.hero-box{padding:30px;background:linear-gradient(135deg,#101d38 0%,#1b3159 58%,#234273 100%);color:#fff;overflow:hidden;position:relative}.hero-box:before,.hero-box:after{content:"";position:absolute;border-radius:999px;background:rgba(255,255,255,.08)}.hero-box:before{width:320px;height:320px;right:-100px;top:-120px}.hero-box:after{width:250px;height:250px;left:-80px;bottom:-120px}
-    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;position:relative;z-index:1}.eyebrow{display:inline-block;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero h1{margin:18px 0 12px;font-size:clamp(42px,6vw,76px);line-height:.95;letter-spacing:-.05em;max-width:10ch}.hero p{margin:0;max-width:56ch;color:rgba(255,255,255,.88);font-size:19px;line-height:1.7}
-    .actions,.chips,.path-grid,.proof-grid,.gain-grid,.link-grid{display:grid;gap:14px}.actions{margin-top:24px;grid-template-columns:repeat(2,max-content)}.chips{margin-top:18px;grid-template-columns:repeat(3,max-content)}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:800}.btn.primary{background:linear-gradient(135deg,var(--coral),#ff8d63);color:#fff;box-shadow:0 16px 32px rgba(255,107,87,.3)}.btn.secondary{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#fff}.chip{padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);font-size:13px;font-weight:700}
-    .visual{min-height:470px;display:grid}.poster{height:100%;padding:20px;border-radius:24px;background:linear-gradient(160deg,rgba(39,179,167,.22),rgba(255,107,87,.18));border:1px solid rgba(255,255,255,.14);display:grid;gap:14px;align-content:space-between}.logo{width:82px;height:82px;border-radius:22px;background:rgba(255,255,255,.95);padding:14px;box-shadow:0 18px 36px rgba(20,33,61,.2)}.note,.impact{padding:18px;border-radius:22px;box-shadow:0 14px 30px rgba(20,33,61,.16)}.note{max-width:220px;margin-left:auto;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:14px;line-height:1.55}.impact{background:rgba(255,255,255,.95);color:var(--ink)}.impact strong{display:block;margin-bottom:6px;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#c64a3b}.impact span{display:block;color:var(--soft);font-size:15px;line-height:1.6}
-    .strip{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mini{padding:18px 20px;border-radius:22px;background:rgba(255,255,255,.88);border:1px solid rgba(255,255,255,.2);box-shadow:0 12px 26px rgba(20,33,61,.1)}.mini strong{display:block;margin-bottom:8px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#c64a3b}.mini span{display:block;color:var(--soft);font-size:15px;line-height:1.55}
-    .head{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;margin-bottom:18px}.kicker{margin:0 0 10px;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.section h2{margin:0;font-size:clamp(28px,4vw,50px);line-height:1.02;letter-spacing:-.04em}.intro{margin:14px 0 0;max-width:58ch;color:var(--soft);font-size:18px;line-height:1.75}.badge{align-self:center;padding:14px 18px;border-radius:999px;background:rgba(39,179,167,.1);border:1px solid rgba(39,179,167,.18);font-size:13px;font-weight:800}
-    .proof-grid,.gain-grid,.link-grid{grid-template-columns:repeat(3,1fr)}.proof,.gain,.link-card{padding:24px}.num,.icon{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;margin-bottom:14px;font-weight:800}.num{background:linear-gradient(135deg,rgba(255,107,87,.16),rgba(243,193,79,.26));color:#c64a3b}.icon{background:linear-gradient(135deg,rgba(39,179,167,.18),rgba(243,193,79,.26));font-size:22px}.proof h3,.gain h3,.path h3,.link-card strong{margin:0 0 8px;font-size:24px;line-height:1.12;letter-spacing:-.03em}.proof p,.gain p,.link-card span{margin:0;color:var(--soft);font-size:16px;line-height:1.7}
-    .contrast{margin-top:20px;padding:26px}.contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.box{padding:22px;border-radius:22px}.box.bad{background:rgba(20,33,61,.05)}.box.good{background:linear-gradient(135deg,rgba(255,107,87,.1),rgba(39,179,167,.1));border:1px solid rgba(255,107,87,.12)}.box h3{margin:0 0 8px;font-size:20px}.box p{margin:0;color:var(--soft);font-size:16px;line-height:1.7}
-    .path-grid{grid-template-columns:repeat(3,1fr)}.path{display:flex;flex-direction:column;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.96),rgba(248,252,255,.9));border:1px solid rgba(20,33,61,.08);border-radius:var(--radius);box-shadow:var(--shadow)}.path-body{padding:22px}.tag{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(39,179,167,.1);border:1px solid rgba(39,179,167,.16);font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.path p{margin:0;color:var(--soft);font-size:16px;line-height:1.72}.path ul{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:10px}.path li{position:relative;padding-left:28px;font-size:15px;line-height:1.6}.path li:before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:999px;background:linear-gradient(135deg,var(--coral),var(--gold));box-shadow:0 0 0 4px rgba(255,107,87,.12)}.path-foot{margin-top:auto;padding:0 22px 22px}.path-note{padding:16px;border-radius:18px;background:rgba(20,33,61,.04);border:1px solid rgba(20,33,61,.08);color:var(--soft);font-size:14px;line-height:1.65}
-    .steps{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}.steps-panel{padding:26px}.step{display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(20,33,61,.08)}.step:last-child{border:0;padding-bottom:0}.step-no{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(135deg,var(--coral),#ff8d63);color:#fff;font-size:22px;font-weight:800;box-shadow:0 16px 28px rgba(255,107,87,.26)}.step h3{margin:0 0 8px;font-size:24px}.step p{margin:0;color:var(--soft);font-size:16px;line-height:1.72}
-    .quote{padding:26px;background:linear-gradient(160deg,#1f355e 0%,#14213d 100%);color:#fff;position:relative;overflow:hidden}.quote:before{content:"Quote";position:absolute;right:18px;top:18px;font-size:22px;line-height:1;color:rgba(255,255,255,.08);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.quote .kicker{color:rgba(255,255,255,.7)}.quote h2{font-size:34px;max-width:12ch}.quote p{margin:18px 0 0;color:rgba(255,255,255,.84);font-size:17px;line-height:1.75}
-    .faq-wrap{display:grid;grid-template-columns:1fr 1fr;gap:18px}.faq-col{padding:6px}.faq-col details{background:rgba(255,255,255,.88);border:1px solid rgba(20,33,61,.07);border-radius:22px;overflow:hidden}.faq-col details+details{margin-top:10px}.faq-col summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-size:18px;font-weight:800;line-height:1.45;position:relative}.faq-col summary::-webkit-details-marker{display:none}.faq-col summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:999px;background:rgba(255,107,87,.1);color:#c64a3b;display:grid;place-items:center;font-size:18px;font-weight:900}.faq-col details[open] summary:after{content:"-"}
-    .answer{padding:0 20px 20px;color:var(--soft);font-size:16px;line-height:1.72}.cta{overflow:hidden;position:relative;background:linear-gradient(135deg,#17284a 0%,#101a31 100%);color:#fff;box-shadow:0 28px 70px rgba(20,33,61,.22)}.cta:before{content:"";position:absolute;width:280px;height:280px;border-radius:999px;background:rgba(255,107,87,.16);right:-80px;top:-60px}.cta-inner{position:relative;z-index:1;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;padding:32px}.cta h2{max-width:12ch}.cta p{margin:14px 0 0;max-width:54ch;color:rgba(255,255,255,.84);font-size:18px;line-height:1.75}.cta-actions{display:grid;gap:12px;min-width:270px}.mail{display:inline-flex;align-items:center;margin-top:14px;padding:12px 16px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);font-size:14px;font-weight:700;user-select:all}
-    .link-card{transition:transform .18s ease,box-shadow .18s ease}.link-card:hover{transform:translateY(-2px);box-shadow:0 24px 60px rgba(20,33,61,.14)}.footer-space{height:36px}
-    @media (max-width:980px){.hero-grid,.strip,.proof-grid,.path-grid,.steps,.faq-wrap,.gain-grid,.link-grid,.cta-inner,.head,.contrast-grid{grid-template-columns:1fr}.actions,.chips{grid-template-columns:1fr}.visual{min-height:auto}.badge,.cta-actions{min-width:0}}
-    @media (max-width:640px){.wrap{width:min(var(--max),calc(100% - 18px))}.hero-box,.steps-panel,.quote,.cta-inner,.contrast{padding:22px}.hero h1{max-width:100%}.section{padding-top:18px}}
-  </style>
-</head>
-<body>
-  <section class="hero">
-    <div class="wrap">
-      <div class="card hero-box">
-        <div class="hero-grid">
+<div style="margin:0;background:#fff8ef;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:#14213d;">
+  <div style="min-height:100vh;padding:40px 20px;border-radius:12px;overflow:hidden;background:radial-gradient(circle at top left,rgba(39,179,167,0.18),transparent 28%),radial-gradient(circle at top right,rgba(255,107,87,0.15),transparent 22%),linear-gradient(180deg,#fff7ee 0%,#f7fbff 52%,#fffdf8 100%);">
+    <div style="max-width:850px;margin:0 auto;">
+      <section style="background:linear-gradient(135deg,#101d38 0%,#1b3159 58%,#234273 100%);border-radius:28px;padding:30px;box-shadow:0 24px 60px rgba(20,33,61,0.18);margin-bottom:18px;color:#ffffff;overflow:hidden;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;align-items:center;">
           <div>
-            <span class="eyebrow">Experimentversion - fria tyglar</span>
-            <h1>Du beh&ouml;ver inte bli en hj&auml;lte. Du beh&ouml;ver bara s&auml;ga ja till ett f&ouml;rsta steg.</h1>
-            <p>Om jag fick fria h&auml;nder skulle den h&auml;r sidan sluta l&aring;ta som en informationssida och b&ouml;rja fungera som en riktig rekryteringssida. Mindre "h&auml;r &auml;r v&aring;ra roller". Mer "det h&auml;r k&auml;nns tryggt, meningsfullt och faktiskt m&ouml;jligt".</p>
-            <div class="actions">
-              <a class="btn primary" href="mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS">Jag vill hj&auml;lpa till</a>
-              <a class="btn secondary" href="#vagar">Se vilken v&auml;g som passar mig</a>
+            <div style="display:inline-block;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.14);font-size:12px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Experimentversion - SportAdmin-anpassad</div>
+            <h1 style="margin:18px 0 12px 0;font-size:44px;line-height:0.98;letter-spacing:-0.04em;max-width:10ch;">Du beh&ouml;ver inte bli en hj&auml;lte. Du beh&ouml;ver bara s&auml;ga ja till ett f&ouml;rsta steg.</h1>
+            <p style="margin:0;max-width:56ch;color:rgba(255,255,255,0.88);font-size:18px;line-height:1.72;">Det h&auml;r &auml;r samma friare riktning som innan, men nu &ouml;versatt till det som faktiskt fungerar i SportAdmin. Mindre f&ouml;reningsinformation f&ouml;rst. Mer k&auml;nsla, trygghet och l&aring;g tr&ouml;skel direkt.</p>
+            <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px;">
+              <a href="mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:800;text-decoration:none;background:linear-gradient(135deg,#ff6b57 0%,#ff8d63 100%);color:#ffffff;box-shadow:0 14px 28px rgba(255,107,87,0.30);">Jag vill hj&auml;lpa till</a>
+              <a href="https://www.ljungbyss.se/sida/?ID=591089" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:700;text-decoration:none;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.18);color:#ffffff;">Kontaktportal</a>
             </div>
-            <div class="chips">
-              <span class="chip">Ingen f&ouml;rkunskap kr&auml;vs</span>
-              <span class="chip">B&ouml;rja sm&aring;tt om du vill</span>
-              <span class="chip">Vi hj&auml;lper dig hitta r&auml;tt</span>
-            </div>
-          </div>
-          <div class="visual">
-            <div class="poster">
-              <div class="logo"><img src="https://cdn.sportadmin.se/699/h/253/f76b3ec1fcf0904d98ef45fd1ba04000e8dc40ccd90c051d5bfb81d5d157cad0_L.png" alt="Ljungby Sims&auml;llskap logotyp"></div>
-              <div class="note"><strong>Det viktigaste skiftet</strong> Fr&aring;n att beskriva uppdrag till att s&auml;nka motst&aring;nd. Det &auml;r d&auml;r fler ja b&ouml;rjar.</div>
-              <div class="impact"><strong>Vad jag &auml;ndrade f&ouml;rst</strong><span>Rubrik, tempo, k&auml;nsla och CTA. Bes&ouml;karen ska k&auml;nna "det h&auml;r kanske &auml;r f&ouml;r mig" innan detaljerna kommer.</span></div>
-              <div class="impact"><strong>Varf&ouml;r det h&auml;r &auml;r b&auml;ttre</strong><span>Den h&auml;r versionen pratar till n&aring;gon som tvekar, inte till n&aring;gon som redan best&auml;mt sig.</span></div>
+            <div style="margin-top:18px;display:flex;flex-wrap:wrap;gap:10px;">
+              <span style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.14);font-size:13px;font-weight:700;color:#ffffff;">Ingen f&ouml;rkunskap kr&auml;vs</span>
+              <span style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.14);font-size:13px;font-weight:700;color:#ffffff;">B&ouml;rja sm&aring;tt om du vill</span>
+              <span style="display:inline-flex;align-items:center;padding:10px 14px;border-radius:999px;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.14);font-size:13px;font-weight:700;color:#ffffff;">Vi hj&auml;lper dig hitta r&auml;tt</span>
             </div>
           </div>
+          <div style="display:grid;gap:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
+              <div style="width:82px;height:82px;border-radius:22px;background:rgba(255,255,255,0.95);padding:14px;box-shadow:0 18px 36px rgba(20,33,61,0.20);">
+                <img src="https://cdn.sportadmin.se/699/h/253/f76b3ec1fcf0904d98ef45fd1ba04000e8dc40ccd90c051d5bfb81d5d157cad0_L.png" alt="Ljungby Sims&auml;llskap logotyp" style="width:100%;height:100%;object-fit:contain;">
+              </div>
+              <div style="max-width:220px;padding:18px;border-radius:22px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.16);color:#ffffff;font-size:14px;line-height:1.55;">
+                <strong style="display:block;margin-bottom:6px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;">Det viktigaste skiftet</strong>
+                Fr&aring;n att beskriva uppdrag till att s&auml;nka motst&aring;nd. Det &auml;r d&auml;r fler ja b&ouml;rjar.
+              </div>
+            </div>
+            <div style="padding:18px;border-radius:22px;background:rgba(255,255,255,0.95);box-shadow:0 14px 30px rgba(20,33,61,0.16);">
+              <strong style="display:block;margin-bottom:6px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:#c64a3b;">Vad jag &auml;ndrade f&ouml;rst</strong>
+              <span style="display:block;color:#51627d;font-size:15px;line-height:1.6;">Rubrik, tempo, k&auml;nsla och CTA. Bes&ouml;karen ska k&auml;nna &rdquo;det h&auml;r kanske &auml;r f&ouml;r mig&rdquo; innan detaljerna kommer.</span>
+            </div>
+            <div style="padding:18px;border-radius:22px;background:rgba(255,255,255,0.95);box-shadow:0 14px 30px rgba(20,33,61,0.16);">
+              <strong style="display:block;margin-bottom:6px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:#c64a3b;">Varf&ouml;r det h&auml;r &auml;r b&auml;ttre</strong>
+              <span style="display:block;color:#51627d;font-size:15px;line-height:1.6;">Den h&auml;r versionen pratar till n&aring;gon som tvekar, inte till n&aring;gon som redan har best&auml;mt sig.</span>
+            </div>
+          </div>
         </div>
-        <div class="strip">
-          <div class="mini"><strong>Analys 1</strong><span>Originalet informerar tydligt, men inspirerar f&ouml;r lite.</span></div>
-          <div class="mini"><strong>Analys 2</strong><span>Valet k&auml;nns f&ouml;r stort f&ouml;r tidigt. Det beh&ouml;ver bli enklare att komma in.</span></div>
-          <div class="mini"><strong>Analys 3</strong><span>Call to action m&aring;ste k&auml;nnas l&auml;tt, annars blir det inget n&auml;sta steg.</span></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:18px;">
+          <div style="padding:18px 20px;border-radius:22px;background:rgba(255,255,255,0.88);box-shadow:0 12px 26px rgba(20,33,61,0.10);">
+            <strong style="display:block;margin-bottom:8px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#c64a3b;">Analys 1</strong>
+            <span style="display:block;color:#51627d;font-size:15px;line-height:1.55;">Originalet informerar tydligt, men inspirerar f&ouml;r lite.</span>
+          </div>
+          <div style="padding:18px 20px;border-radius:22px;background:rgba(255,255,255,0.88);box-shadow:0 12px 26px rgba(20,33,61,0.10);">
+            <strong style="display:block;margin-bottom:8px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#c64a3b;">Analys 2</strong>
+            <span style="display:block;color:#51627d;font-size:15px;line-height:1.55;">Valet k&auml;nns f&ouml;r stort f&ouml;r tidigt. Det beh&ouml;ver bli enklare att komma in.</span>
+          </div>
+          <div style="padding:18px 20px;border-radius:22px;background:rgba(255,255,255,0.88);box-shadow:0 12px 26px rgba(20,33,61,0.10);">
+            <strong style="display:block;margin-bottom:8px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#c64a3b;">Analys 3</strong>
+            <span style="display:block;color:#51627d;font-size:15px;line-height:1.55;">Call to action m&aring;ste k&auml;nnas l&auml;tt, annars blir det inget n&auml;sta steg.</span>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="head">
-        <div>
-          <p class="kicker">Research + slutsats</p>
-          <h2>Vad som brukar fungera b&auml;ttre p&aring; volont&auml;r- och engagemangssidor</h2>
-          <p class="intro">Min research pekade &aring;t samma h&aring;ll fr&aring;n flera h&aring;ll: den h&auml;r typen av sidor fungerar b&auml;ttre n&auml;r de &auml;r skannbara, k&auml;nslom&auml;ssigt tydliga och visar b&aring;de varf&ouml;r det spelar roll och hur l&auml;tt det &auml;r att b&ouml;rja.</p>
-        </div>
-        <div class="badge">Tre omg&aring;ngar analys gjorda</div>
-      </div>
-      <div class="proof-grid">
-        <article class="card proof"><div class="num">01</div><h3>Story f&ouml;re struktur</h3><p>M&auml;nniskor beh&ouml;ver f&ouml;rst k&auml;nna koppling till uppdraget. D&auml;rf&ouml;r b&ouml;rjar den h&auml;r versionen med mening och k&auml;nsla, inte organisationslogik.</p></article>
-        <article class="card proof"><div class="num">02</div><h3>Skannbar text vinner</h3><p>Snabba rubriker, tydliga block och kortare val &auml;r starkare &auml;n t&auml;ta textpartier. D&auml;rf&ouml;r g&aring;r sidan fr&aring;n &ouml;verblick till detalj, inte tv&auml;rtom.</p></article>
-        <article class="card proof"><div class="num">03</div><h3>L&aring;g tr&ouml;skel konverterar b&auml;ttre</h3><p>F&ouml;rsta handlingen ska k&auml;nnas enkel. D&auml;rf&ouml;r &auml;r huvudm&aring;let h&auml;r inte "ta en roll", utan "visa intresse".</p></article>
-      </div>
-      <div class="card contrast">
-        <div class="contrast-grid">
-          <div class="box bad"><h3>Det gamla t&auml;nket</h3><p>H&auml;r &auml;r v&aring;ra behov. L&auml;s allt. F&ouml;rst&aring; rollerna. Best&auml;m dig.</p></div>
-          <div class="box good"><h3>Det nya t&auml;nket</h3><p>H&auml;r &auml;r varf&ouml;r det spelar roll. H&auml;r &auml;r tre enkla v&auml;gar in. S&auml;g bara att du &auml;r nyfiken, s&aring; hj&auml;lper vi dig vidare.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="vagar">
-    <div class="wrap">
-      <div class="head">
-        <div>
-          <p class="kicker">Tre v&auml;gar in</p>
-          <h2>Du ska inte beh&ouml;va l&auml;sa en hel f&ouml;rening f&ouml;r att f&ouml;rst&aring; var du passar</h2>
-          <p class="intro">Den st&ouml;rsta f&ouml;rb&auml;ttringen h&auml;r &auml;r att jag bytte fr&aring;n rollkatalog till tre tydliga v&auml;gval. Det g&ouml;r sidan l&auml;ttare, snabbare och mycket mer m&auml;nsklig.</p>
-        </div>
-      </div>
-      <div class="path-grid">
-        <article class="path"><div class="path-body"><span class="tag">Liten start</span><h3>Jag kan hj&auml;lpa till ibland</h3><p>F&ouml;r dig som vill b&ouml;rja enkelt, k&auml;nna efter och bidra utan att binda upp dig tungt direkt.</p><ul><li>Funktion&auml;r under t&auml;vling</li><li>Kiosk eller praktisk hj&auml;lp</li><li>Avgr&auml;nsade insatser n&auml;r behov finns</li></ul></div><div class="path-foot"><div class="path-note">B&auml;sta startsp&aring;ret f&ouml;r n&aring;gon som &auml;r positiv men os&auml;ker.</div></div></article>
-        <article class="path"><div class="path-body"><span class="tag">Mer delaktighet</span><h3>Jag vill vara en del av gemenskapen</h3><p>F&ouml;r dig som gillar relationer, trivsel och att g&ouml;ra klubben starkare runt verksamheten.</p><ul><li>F&ouml;r&auml;ldrakommitt&eacute;</li><li>Foto, film och inneh&aring;ll</li><li>St&ouml;d kring aktiviteter och arrangemang</li></ul></div><div class="path-foot"><div class="path-note">Det h&auml;r sp&aring;ret k&auml;nns roligare och l&auml;ttare &auml;n folk ofta tror.</div></div></article>
-        <article class="path"><div class="path-body"><span class="tag">St&ouml;rre p&aring;verkan</span><h3>Jag vill hj&auml;lpa f&ouml;reningen fram&aring;t</h3><p>F&ouml;r dig som gillar struktur, ansvar, riktning och att p&aring;verka mer l&aring;ngsiktigt.</p><ul><li>Ledamot eller suppleant</li><li>Sekreterare eller kass&ouml;r</li><li>Andra roller i styrelsearbetet</li></ul></div><div class="path-foot"><div class="path-note">Genom att paketera det h&auml;r som ett eget sp&aring;r k&auml;nns det mindre skr&auml;mmande.</div></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="steps">
-        <div class="card steps-panel">
-          <p class="kicker">S&aring; enkelt ska det k&auml;nnas</p>
-          <h2>En sida som leder till handling m&aring;ste g&ouml;ra f&ouml;rsta steget l&ouml;jligt enkelt</h2>
-          <p class="intro" style="font-size:17px">Det h&auml;r &auml;r mitt tydligaste f&ouml;rslag. G&ouml;r processen s&aring; enkel att &auml;ven en tveksam person k&auml;nner att den orkar ta kontakt.</p>
-          <div class="step"><div class="step-no">1</div><div><h3>Du h&ouml;r av dig</h3><p>Inte f&ouml;r att lova n&aring;got stort, utan f&ouml;r att s&auml;ga att du &auml;r nyfiken. Det &auml;r en mycket b&auml;ttre &ouml;ppning.</p></div></div>
-          <div class="step"><div class="step-no">2</div><div><h3>Ni hittar en rimlig start</h3><p>LSS matchar uppdrag efter tid, intresse och trygghet. Det minskar friktion direkt.</p></div></div>
-          <div class="step"><div class="step-no">3</div><div><h3>Du testar utan press</h3><p>Ett f&ouml;rsta tillf&auml;lle eller ett mindre ansvar k&auml;nns mycket mer g&ouml;rbart &auml;n ett diffust l&aring;ngsiktigt ja.</p></div></div>
-        </div>
-        <aside class="card quote">
-          <p class="kicker">Min raka &aring;sikt</p>
-          <h2>Den gamla versionen informerar. Den h&auml;r versionen f&ouml;rs&ouml;ker vinna hj&auml;rtat f&ouml;rst och hj&auml;rnan sen.</h2>
-          <p>Det &auml;r precis s&aring; jag tycker att den h&auml;r typen av sida ska fungera om m&aring;let &auml;r fler som faktiskt tar kontakt.</p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="head">
-        <div>
-          <p class="kicker">Vad man f&aring;r tillbaka</p>
-          <h2>Det h&auml;r &auml;r ocks&aring; en s&auml;ljsida. Folk beh&ouml;ver k&auml;nna vad de sj&auml;lva f&aring;r ut av att vara med.</h2>
-          <p class="intro">Den h&auml;r delen saknas ofta p&aring; ideella sidor. Men det &auml;r ett misstag. Att hj&auml;lpa till f&aring;r g&auml;rna k&auml;nnas b&aring;de fint och personligt meningsfullt.</p>
-        </div>
-      </div>
-      <div class="gain-grid">
-        <article class="card gain"><div class="icon">G</div><h3>Gemenskap</h3><p>Du blir inte bara n&aring;gon som tittar p&aring;. Du blir en del av m&auml;nniskorna runt verksamheten.</p></article>
-        <article class="card gain"><div class="icon">S</div><h3>Stolthet</h3><p>Det k&auml;nns annorlunda n&auml;r man vet att ens egen insats faktiskt g&ouml;r att barn och ungdomar f&aring;r en b&auml;ttre verksamhet.</p></article>
-        <article class="card gain"><div class="icon">T</div><h3>Trygg utveckling</h3><p>Du beh&ouml;ver inte kunna allt fr&aring;n b&ouml;rjan. Bra volont&auml;rsidor lovar st&ouml;d, inte perfektion.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="head">
-        <div>
-          <p class="kicker">Vanliga fr&aring;gor</p>
-          <h2>Inv&auml;ndningar m&aring;ste bem&ouml;tas direkt p&aring; sidan</h2>
-          <p class="intro">H&auml;r tog jag bort os&auml;kerhet innan den hinner v&auml;xa. Det &auml;r b&auml;ttre &auml;n att hoppas att bes&ouml;karen sj&auml;lv ska r&auml;kna ut allt.</p>
-        </div>
-      </div>
-      <div class="faq-wrap">
-        <div class="card faq-col">
-          <details open><summary>M&aring;ste jag veta exakt vilken roll jag vill ha?</summary><div class="answer">Nej. Det &auml;r exakt den tr&ouml;skeln jag ville ta bort. Ett enkelt intressemail r&auml;cker som f&ouml;rsta steg.</div></details>
-          <details><summary>Kan jag b&ouml;rja v&auml;ldigt sm&aring;tt?</summary><div class="answer">Ja. Den h&auml;r sidan &auml;r byggd f&ouml;r att signalera just det. Du kan b&ouml;rja med n&aring;got avgr&auml;nsat och k&auml;nna efter.</div></details>
-        </div>
-        <div class="card faq-col">
-          <details><summary>Vad om jag &auml;r os&auml;ker p&aring; om jag har tid?</summary><div class="answer">D&aring; &auml;r det &auml;nnu viktigare att sidan inte ber om ett stort ja direkt. Den ska bjuda in till dialog, inte kr&auml;va ett l&ouml;fte.</div></details>
-          <details><summary>Varf&ouml;r funkar den h&auml;r versionen b&auml;ttre?</summary><div class="answer">F&ouml;r att den bygger p&aring; b&auml;ttre l&auml;sbarhet, starkare emotionell krok, tydligare v&auml;gval och en mycket l&auml;ttare call to action.</div></details>
-        </div>
-      </div>
-      <div class="card cta" style="margin-top:18px">
-        <div class="cta-inner">
+      </section>
+      <section style="background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;margin-bottom:18px;">
+        <div style="display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;margin-bottom:18px;">
           <div>
-            <h2>Skriv bara att du &auml;r nyfiken. Det r&auml;cker.</h2>
-            <p>Om jag skulle optimera den h&auml;r sidan f&ouml;r verkligt resultat, d&aring; &auml;r det h&auml;r huvudpo&auml;ngen. Ingen ska k&auml;nna att de m&aring;ste vara f&auml;rdiga innan de tar kontakt.</p>
-            <div class="mail">info@ljungbyss.se</div>
+            <p style="margin:0 0 10px 0;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Research + slutsats</p>
+            <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#14213d;">Vad som brukar fungera b&auml;ttre p&aring; volont&auml;r- och engagemangssidor</h2>
+            <p style="margin:14px 0 0 0;max-width:58ch;color:#51627d;font-size:18px;line-height:1.75;">Min research pekade &aring;t samma h&aring;ll fr&aring;n flera h&aring;ll: den h&auml;r typen av sidor fungerar b&auml;ttre n&auml;r de &auml;r skannbara, k&auml;nslom&auml;ssigt tydliga och visar b&aring;de varf&ouml;r det spelar roll och hur l&auml;tt det &auml;r att b&ouml;rja.</p>
           </div>
-          <div class="cta-actions">
-            <a class="btn primary" href="mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS">Skicka ett intressemail</a>
-            <a class="btn secondary" href="https://ljungbyss.web.sportadmin.se/sida/?ID=576221">Kontaktuppgifter</a>
+          <div style="align-self:center;padding:14px 18px;border-radius:999px;background:rgba(39,179,167,0.10);border:1px solid rgba(39,179,167,0.18);font-size:13px;font-weight:800;color:#14213d;">Tre omg&aring;ngar analys gjorda</div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;">
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(255,107,87,0.16),rgba(243,193,79,0.26));color:#c64a3b;">01</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Story f&ouml;re struktur</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">M&auml;nniskor beh&ouml;ver f&ouml;rst k&auml;nna koppling till uppdraget. D&auml;rf&ouml;r b&ouml;rjar den h&auml;r versionen med mening och k&auml;nsla, inte organisationslogik.</p>
+          </article>
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(255,107,87,0.16),rgba(243,193,79,0.26));color:#c64a3b;">02</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Skannbar text vinner</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">Snabba rubriker, tydliga block och kortare val &auml;r starkare &auml;n t&auml;ta textpartier. D&auml;rf&ouml;r g&aring;r sidan fr&aring;n &ouml;verblick till detalj, inte tv&auml;rtom.</p>
+          </article>
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(255,107,87,0.16),rgba(243,193,79,0.26));color:#c64a3b;">03</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">L&aring;g tr&ouml;skel konverterar b&auml;ttre</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">F&ouml;rsta handlingen ska k&auml;nnas enkel. D&auml;rf&ouml;r &auml;r huvudm&aring;let h&auml;r inte &rdquo;ta en roll&rdquo;, utan &rdquo;visa intresse&rdquo;.</p>
+          </article>
+        </div>
+        <div style="margin-top:20px;padding:26px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;">
+            <div style="padding:22px;border-radius:22px;background:rgba(20,33,61,0.05);">
+              <h3 style="margin:0 0 8px 0;font-size:20px;color:#14213d;">Det gamla t&auml;nket</h3>
+              <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">H&auml;r &auml;r v&aring;ra behov. L&auml;s allt. F&ouml;rst&aring; rollerna. Best&auml;m dig.</p>
+            </div>
+            <div style="padding:22px;border-radius:22px;background:linear-gradient(135deg,rgba(255,107,87,0.10),rgba(39,179,167,0.10));border:1px solid rgba(255,107,87,0.12);">
+              <h3 style="margin:0 0 8px 0;font-size:20px;color:#14213d;">Det nya t&auml;nket</h3>
+              <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">H&auml;r &auml;r varf&ouml;r det spelar roll. H&auml;r &auml;r tre enkla v&auml;gar in. S&auml;g bara att du &auml;r nyfiken, s&aring; hj&auml;lper vi dig vidare.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+      <section style="margin-bottom:18px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;">
+          <div style="background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;">
+            <p style="margin:0 0 10px 0;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">S&aring; enkelt ska det k&auml;nnas</p>
+            <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#14213d;">En sida som leder till handling m&aring;ste g&ouml;ra f&ouml;rsta steget l&ouml;jligt enkelt</h2>
+            <p style="margin:14px 0 0 0;color:#51627d;font-size:17px;line-height:1.72;">Det h&auml;r &auml;r mitt tydligaste f&ouml;rslag. G&ouml;r processen s&aring; enkel att &auml;ven en tveksam person k&auml;nner att den orkar ta kontakt.</p>
+            <div style="display:grid;gap:0;margin-top:10px;">
+              <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(20,33,61,0.08);">
+                <div style="width:54px;height:54px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff6b57,#ff8d63);color:#ffffff;font-size:22px;font-weight:800;box-shadow:0 16px 28px rgba(255,107,87,0.26);">1</div>
+                <div><h3 style="margin:0 0 8px 0;font-size:24px;color:#14213d;">Du h&ouml;r av dig</h3><p style="margin:0;color:#51627d;font-size:16px;line-height:1.72;">Inte f&ouml;r att lova n&aring;got stort, utan f&ouml;r att s&auml;ga att du &auml;r nyfiken. Det &auml;r en mycket b&auml;ttre &ouml;ppning.</p></div>
+              </div>
+              <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0;border-bottom:1px solid rgba(20,33,61,0.08);">
+                <div style="width:54px;height:54px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff6b57,#ff8d63);color:#ffffff;font-size:22px;font-weight:800;box-shadow:0 16px 28px rgba(255,107,87,0.26);">2</div>
+                <div><h3 style="margin:0 0 8px 0;font-size:24px;color:#14213d;">Ni hittar en rimlig start</h3><p style="margin:0;color:#51627d;font-size:16px;line-height:1.72;">LSS matchar uppdrag efter tid, intresse och trygghet. Det minskar friktion direkt.</p></div>
+              </div>
+              <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;padding:18px 0 0 0;">
+                <div style="width:54px;height:54px;border-radius:18px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ff6b57,#ff8d63);color:#ffffff;font-size:22px;font-weight:800;box-shadow:0 16px 28px rgba(255,107,87,0.26);">3</div>
+                <div><h3 style="margin:0 0 8px 0;font-size:24px;color:#14213d;">Du testar utan press</h3><p style="margin:0;color:#51627d;font-size:16px;line-height:1.72;">Ett f&ouml;rsta tillf&auml;lle eller ett mindre ansvar k&auml;nns mycket mer g&ouml;rbart &auml;n ett diffust l&aring;ngsiktigt ja.</p></div>
+              </div>
+            </div>
+          </div>
+          <aside style="background:linear-gradient(160deg,#1f355e 0%,#14213d 100%);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;color:#ffffff;overflow:hidden;">
+            <p style="margin:0 0 10px 0;color:rgba(255,255,255,0.72);font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Min raka &aring;sikt</p>
+            <h2 style="margin:0;font-size:34px;line-height:1.08;letter-spacing:-0.04em;max-width:12ch;color:#ffffff;">Den gamla versionen informerar. Den h&auml;r versionen f&ouml;rs&ouml;ker vinna hj&auml;rtat f&ouml;rst och hj&auml;rnan sen.</h2>
+            <p style="margin:18px 0 0 0;color:rgba(255,255,255,0.84);font-size:17px;line-height:1.75;">Det &auml;r precis s&aring; jag tycker att den h&auml;r typen av sida ska fungera om m&aring;let &auml;r fler som faktiskt tar kontakt.</p>
+          </aside>
+        </div>
+      </section>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="head">
-        <div>
-          <p class="kicker">Relaterade sidor</p>
-          <h2>Om du vill bygga vidare p&aring; den h&auml;r riktningen</h2>
-          <p class="intro">De h&auml;r l&auml;nkarna passar b&auml;st om du vill g&ouml;ra hela kontaktdelen mer sammanh&auml;ngande och mer modern.</p>
+      <section style="background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;margin-bottom:18px;">
+        <p style="margin:0 0 10px 0;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Vad man f&aring;r tillbaka</p>
+        <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#14213d;">Det h&auml;r &auml;r ocks&aring; en s&auml;ljsida. Folk beh&ouml;ver k&auml;nna vad de sj&auml;lva f&aring;r ut av att vara med.</h2>
+        <p style="margin:14px 0 0 0;max-width:58ch;color:#51627d;font-size:18px;line-height:1.75;">Den h&auml;r delen saknas ofta p&aring; ideella sidor. Men det &auml;r ett misstag. Att hj&auml;lpa till f&aring;r g&auml;rna k&auml;nnas b&aring;de fint och personligt meningsfullt.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px;">
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(39,179,167,0.18),rgba(243,193,79,0.26));font-size:22px;color:#14213d;">G</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Gemenskap</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">Du blir inte bara n&aring;gon som tittar p&aring;. Du blir en del av m&auml;nniskorna runt verksamheten.</p>
+          </article>
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(39,179,167,0.18),rgba(243,193,79,0.26));font-size:22px;color:#14213d;">S</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Stolthet</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">Det k&auml;nns annorlunda n&auml;r man vet att ens egen insats faktiskt g&ouml;r att barn och ungdomar f&aring;r en b&auml;ttre verksamhet.</p>
+          </article>
+          <article style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <div style="width:48px;height:48px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:800;background:linear-gradient(135deg,rgba(39,179,167,0.18),rgba(243,193,79,0.26));font-size:22px;color:#14213d;">T</div>
+            <h3 style="margin:0 0 8px 0;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Trygg utveckling</h3>
+            <p style="margin:0;color:#51627d;font-size:16px;line-height:1.7;">Du beh&ouml;ver inte kunna allt fr&aring;n b&ouml;rjan. Bra volont&auml;rsidor lovar st&ouml;d, inte perfektion.</p>
+          </article>
         </div>
-      </div>
-      <div class="link-grid">
-        <a class="card link-card" href="https://ljungbyss.web.sportadmin.se/sida/?ID=576223"><strong>Bli ledare</strong><span>Naturlig n&auml;sta sida om du vill utveckla samma k&auml;nsla mot ledarrekrytering.</span></a>
-        <a class="card link-card" href="https://ljungbyss.web.sportadmin.se/sida/?ID=576222"><strong>Styrelsen</strong><span>Bra att koppla till den mer ansvarsfulla v&auml;gen in p&aring; experimentsidan.</span></a>
-        <a class="card link-card" href="https://www.ljungbyss.se/sida/?ID=591089"><strong>Kontaktportal</strong><span>St&ouml;dl&auml;nk f&ouml;r den som vill ta kontakt men f&ouml;redrar andra kontaktv&auml;gar.</span></a>
-      </div>
+      </section>
+
+      <section style="background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;margin-bottom:18px;">
+        <p style="margin:0 0 10px 0;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Vanliga fr&aring;gor</p>
+        <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#14213d;">Inv&auml;ndningar m&aring;ste bem&ouml;tas direkt p&aring; sidan</h2>
+        <p style="margin:14px 0 0 0;max-width:58ch;color:#51627d;font-size:18px;line-height:1.75;">H&auml;r tog jag bort os&auml;kerhet innan den hinner v&auml;xa. Det &auml;r b&auml;ttre &auml;n att hoppas att bes&ouml;karen sj&auml;lv ska r&auml;kna ut allt.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px;">
+          <div style="padding:6px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <details open style="background:rgba(255,255,255,0.88);border:1px solid rgba(20,33,61,0.07);border-radius:22px;overflow:hidden;">
+              <summary style="cursor:pointer;list-style:none;padding:18px 20px;font-size:18px;font-weight:800;line-height:1.45;color:#14213d;">M&aring;ste jag veta exakt vilken roll jag vill ha?</summary>
+              <div style="padding:0 20px 20px 20px;color:#51627d;font-size:16px;line-height:1.72;">Nej. Det &auml;r exakt den tr&ouml;skeln jag ville ta bort. Ett enkelt intressemail r&auml;cker som f&ouml;rsta steg.</div>
+            </details>
+            <details style="margin-top:10px;background:rgba(255,255,255,0.88);border:1px solid rgba(20,33,61,0.07);border-radius:22px;overflow:hidden;">
+              <summary style="cursor:pointer;list-style:none;padding:18px 20px;font-size:18px;font-weight:800;line-height:1.45;color:#14213d;">Kan jag b&ouml;rja v&auml;ldigt sm&aring;tt?</summary>
+              <div style="padding:0 20px 20px 20px;color:#51627d;font-size:16px;line-height:1.72;">Ja. Den h&auml;r sidan &auml;r byggd f&ouml;r att signalera just det. Du kan b&ouml;rja med n&aring;got avgr&auml;nsat och k&auml;nna efter.</div>
+            </details>
+          </div>
+          <div style="padding:6px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);">
+            <details style="background:rgba(255,255,255,0.88);border:1px solid rgba(20,33,61,0.07);border-radius:22px;overflow:hidden;">
+              <summary style="cursor:pointer;list-style:none;padding:18px 20px;font-size:18px;font-weight:800;line-height:1.45;color:#14213d;">Vad om jag &auml;r os&auml;ker p&aring; om jag har tid?</summary>
+              <div style="padding:0 20px 20px 20px;color:#51627d;font-size:16px;line-height:1.72;">D&aring; &auml;r det &auml;nnu viktigare att sidan inte ber om ett stort ja direkt. Den ska bjuda in till dialog, inte kr&auml;va ett l&ouml;fte.</div>
+            </details>
+            <details style="margin-top:10px;background:rgba(255,255,255,0.88);border:1px solid rgba(20,33,61,0.07);border-radius:22px;overflow:hidden;">
+              <summary style="cursor:pointer;list-style:none;padding:18px 20px;font-size:18px;font-weight:800;line-height:1.45;color:#14213d;">Varf&ouml;r funkar den h&auml;r versionen b&auml;ttre?</summary>
+              <div style="padding:0 20px 20px 20px;color:#51627d;font-size:16px;line-height:1.72;">F&ouml;r att den bygger p&aring; b&auml;ttre l&auml;sbarhet, starkare emotionell krok, tydligare v&auml;gval och en mycket l&auml;ttare call to action.</div>
+            </details>
+          </div>
+        </div>
+        <div style="margin-top:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#17284a 0%,#101a31 100%);color:#ffffff;border-radius:28px;box-shadow:0 28px 70px rgba(20,33,61,0.22);">
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;align-items:center;padding:32px;">
+            <div>
+              <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#ffffff;max-width:12ch;">Skriv bara att du &auml;r nyfiken. Det r&auml;cker.</h2>
+              <p style="margin:14px 0 0 0;max-width:54ch;color:rgba(255,255,255,0.84);font-size:18px;line-height:1.75;">Om jag skulle optimera den h&auml;r sidan f&ouml;r verkligt resultat, d&aring; &auml;r det h&auml;r huvudpo&auml;ngen. Ingen ska k&auml;nna att de m&aring;ste vara f&auml;rdiga innan de tar kontakt.</p>
+              <div style="display:inline-flex;align-items:center;margin-top:14px;padding:12px 16px;border-radius:999px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.16);font-size:14px;font-weight:700;user-select:all;">info@ljungbyss.se</div>
+            </div>
+            <div style="display:grid;gap:12px;min-width:0;">
+              <a href="mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:800;text-decoration:none;background:linear-gradient(135deg,#ff6b57 0%,#ff8d63 100%);color:#ffffff;box-shadow:0 14px 28px rgba(255,107,87,0.30);">Skicka ett intressemail</a>
+              <a href="https://ljungbyss.web.sportadmin.se/sida/?ID=576221" style="display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:700;text-decoration:none;background:rgba(255,255,255,0.10);border:1px solid rgba(255,255,255,0.18);color:#ffffff;">Kontaktuppgifter</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section style="background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);padding:26px;margin-bottom:18px;">
+        <p style="margin:0 0 10px 0;color:#c64a3b;font-size:13px;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;">Relaterade sidor</p>
+        <h2 style="margin:0;font-size:38px;line-height:1.02;letter-spacing:-0.04em;color:#14213d;">Om du vill bygga vidare p&aring; den h&auml;r riktningen</h2>
+        <p style="margin:14px 0 0 0;max-width:58ch;color:#51627d;font-size:18px;line-height:1.75;">De h&auml;r l&auml;nkarna passar b&auml;st om du vill g&ouml;ra hela kontaktdelen mer sammanh&auml;ngande och mer modern.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:18px;">
+          <a href="https://ljungbyss.web.sportadmin.se/sida/?ID=576223" style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);text-decoration:none;">
+            <strong style="display:block;margin-bottom:8px;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Bli ledare</strong>
+            <span style="display:block;color:#51627d;font-size:16px;line-height:1.7;">Naturlig n&auml;sta sida om du vill utveckla samma k&auml;nsla mot ledarrekrytering.</span>
+          </a>
+          <a href="https://ljungbyss.web.sportadmin.se/sida/?ID=576222" style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);text-decoration:none;">
+            <strong style="display:block;margin-bottom:8px;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Styrelsen</strong>
+            <span style="display:block;color:#51627d;font-size:16px;line-height:1.7;">Bra att koppla till den mer ansvarsfulla v&auml;gen in p&aring; experimentsidan.</span>
+          </a>
+          <a href="https://www.ljungbyss.se/sida/?ID=591089" style="padding:24px;background:rgba(255,255,255,0.82);border:1px solid rgba(20,33,61,0.10);border-radius:28px;box-shadow:0 20px 60px rgba(20,33,61,0.12);text-decoration:none;">
+            <strong style="display:block;margin-bottom:8px;font-size:24px;line-height:1.12;letter-spacing:-0.03em;color:#14213d;">Kontaktportal</strong>
+            <span style="display:block;color:#51627d;font-size:16px;line-height:1.7;">St&ouml;dl&auml;nk f&ouml;r den som vill ta kontakt men f&ouml;redrar andra kontaktv&auml;gar.</span>
+          </a>
+        </div>
+      </section>
     </div>
-  </section>
-  <div class="footer-space"></div>
-</body>
-</html>
+  </div>
+</div>
