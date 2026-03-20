@@ -518,6 +518,21 @@
     const frame = document.getElementById("contentFrame");
     frame.src = content;
 
+    function alignPreviewContentLeft() {
+      try {
+        const doc = frame.contentDocument || frame.contentWindow.document;
+        if (!doc) return;
+
+        const nodes = Array.from(doc.querySelectorAll("[style*='max-width'][style*='margin:0 auto'], [style*='max-width'][style*='margin: 0 auto']"));
+        nodes.forEach((node) => {
+          node.style.marginLeft = "0";
+          node.style.marginRight = "auto";
+        });
+      } catch (e) {
+        // Ignore alignment tweaks if the iframe content is not accessible.
+      }
+    }
+
     function resizeFrame() {
       try {
         const doc = frame.contentDocument || frame.contentWindow.document;
@@ -537,8 +552,11 @@
     }
 
     frame.addEventListener("load", () => {
+      alignPreviewContentLeft();
       resizeFrame();
+      setTimeout(alignPreviewContentLeft, 60);
       setTimeout(resizeFrame, 120);
+      setTimeout(alignPreviewContentLeft, 250);
       setTimeout(resizeFrame, 500);
       setTimeout(resizeFrame, 1200);
     });
