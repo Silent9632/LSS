@@ -269,7 +269,7 @@
 <main class="wrap">
     <section class="hero">
       <h1>LSS Förhandsgranskning</h1>
-      <p class="sub">Alla länkar nedan går till dina lokala HTML-filer. Använd sök för att snabbt hitta en sida.</p>
+      <p class="sub">Alla länkar nedan öppnas i lokal SportAdmin-preview för en mer verklighetstrogen förhandsgranskning. Använd sök för att snabbt hitta en sida.</p>
       <div class="toolbar">
         <input id="search" class="search" type="search" placeholder="Sök sida, t.ex. tider, baddaren, kontakt..." />
         <span id="hint" class="hint">47 sidor tillgängliga</span>
@@ -373,6 +373,14 @@
       const count = document.getElementById("count");
 
       const hint = document.getElementById("hint");
+      const previewShell = "../preview-shell/SportAdmin_Local_Preview.html?content=";
+
+      items.forEach((link) => {
+        const originalHref = link.getAttribute("href");
+        if (!originalHref || !originalHref.endsWith(".html")) return;
+        const targetPath = "../frontend/" + originalHref.replace(/^\.\//, "");
+        link.setAttribute("href", previewShell + encodeURIComponent(targetPath));
+      });
 
       function update() {
         const q = (search.value || "").trim().toLowerCase();
