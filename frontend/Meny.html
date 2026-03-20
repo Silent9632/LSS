@@ -373,12 +373,12 @@
       const count = document.getElementById("count");
 
       const hint = document.getElementById("hint");
-      const previewShell = "../preview-shell/SportAdmin_Local_Preview.html?content=";
+      const previewShell = "./preview-shell/SportAdmin_Local_Preview.html?content=";
 
       items.forEach((link) => {
         const originalHref = link.getAttribute("href");
         if (!originalHref || !originalHref.endsWith(".html")) return;
-        const targetPath = "../frontend/" + originalHref.replace(/^\.\//, "");
+        const targetPath = "../" + originalHref.replace(/^\.\//, "");
         link.setAttribute("href", previewShell + encodeURIComponent(targetPath));
       });
 
