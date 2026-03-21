@@ -514,9 +514,26 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const defaultContent = "../Kontakt/Hjalp_Till_I_Lss.html";
-    const content = params.get("content") || defaultContent;
+    const rawContent = params.get("content") || defaultContent;
     const frame = document.getElementById("contentFrame");
-    frame.src = content;
+
+    function resolveContentPath(path) {
+      const shellPath = window.location.pathname.replace(/\\/g, "/");
+      const isFrontendShell = shellPath.indexOf("/frontend/preview-shell/") !== -1;
+
+      if (!path) return defaultContent;
+      if (/^(https?:)?\/\//.test(path) || path.startsWith("/")) return path;
+
+      if (path.startsWith("../frontend/")) return path;
+
+      if (path.startsWith("../")) {
+        return isFrontendShell ? path : "../frontend/" + path.slice(3);
+      }
+
+      return isFrontendShell ? "../" + path.replace(/^\.\//, "") : "../frontend/" + path.replace(/^\.\//, "");
+    }
+
+    frame.src = resolveContentPath(rawContent);
 
     function alignPreviewContentLeft() {
       try {
