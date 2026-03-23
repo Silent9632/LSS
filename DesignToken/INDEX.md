@@ -14,7 +14,8 @@ Använd denna fil som startpunkt. Läs alltid `01_CORE_STANDARD.md` först och d
 3. `02_COMPONENT_MALLAR.md` (när du bygger/ändrar sektioner)
 4. `03_LINKS_AND_REFERENSER.md` (när du sätter eller verifierar länkar)
 5. `06_V4_STANDARD.md` (när du bygger eller uppdaterar sidor enligt V4-riktningen)
-6. `05_CHANGELOG.md` (vid dokumentuppdateringar)
+6. `07_SPORTADMIN_BEST_PRACTICE.md` (för kvalitetssäkring och best practice inom SportAdmin)
+7. `05_CHANGELOG.md` (vid dokumentuppdateringar)
 
 ## Filöversikt
 - `01_CORE_STANDARD.md`: layout, färger, typografi, checklistor, DoD, premium-recept.
@@ -22,6 +23,7 @@ Använd denna fil som startpunkt. Läs alltid `01_CORE_STANDARD.md` först och d
 - `03_LINKS_AND_REFERENSER.md`: länkpolicy + aktuella nyckellänkar.
 - `04_SPORTADMIN_REGLER.md`: tillåtna taggar/attribut/CSS och begränsningar.
 - `06_V4_STANDARD.md`: V4 som visuell standard för uppdaterade LSS-sidor.
+- `07_SPORTADMIN_BEST_PRACTICE.md`: checklista för tydliga, mänskliga och användbara SportAdmin-sidor.
 - `05_CHANGELOG.md`: ändringslogg för dokumentationen.
 
 ## Regler för struktur
