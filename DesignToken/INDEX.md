@@ -13,13 +13,15 @@ Använd denna fil som startpunkt. Läs alltid `01_CORE_STANDARD.md` först och d
 2. `04_SPORTADMIN_REGLER.md`
 3. `02_COMPONENT_MALLAR.md` (när du bygger/ändrar sektioner)
 4. `03_LINKS_AND_REFERENSER.md` (när du sätter eller verifierar länkar)
-5. `05_CHANGELOG.md` (vid dokumentuppdateringar)
+5. `06_V4_STANDARD.md` (när du bygger eller uppdaterar sidor enligt V4-riktningen)
+6. `05_CHANGELOG.md` (vid dokumentuppdateringar)
 
 ## Filöversikt
 - `01_CORE_STANDARD.md`: layout, färger, typografi, checklistor, DoD, premium-recept.
 - `02_COMPONENT_MALLAR.md`: knappar/länkar, FAQ-standard, e-post-CTA-fallback.
 - `03_LINKS_AND_REFERENSER.md`: länkpolicy + aktuella nyckellänkar.
 - `04_SPORTADMIN_REGLER.md`: tillåtna taggar/attribut/CSS och begränsningar.
+- `06_V4_STANDARD.md`: V4 som visuell standard för uppdaterade LSS-sidor.
 - `05_CHANGELOG.md`: ändringslogg för dokumentationen.
 
 ## Regler för struktur
