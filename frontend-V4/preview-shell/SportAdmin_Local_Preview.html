@@ -525,15 +525,13 @@
         return [normalized];
       }
 
-      candidates.push(normalized);
-
       if (normalized.startsWith("../frontend/")) {
         candidates.push("../" + normalized.slice("../frontend/".length));
       } else if (normalized.startsWith("../")) {
-        candidates.push("../frontend/" + normalized.slice(3));
+        candidates.push(normalized);
       } else {
         candidates.push("../" + normalized);
-        candidates.push("../frontend/" + normalized);
+        candidates.push(normalized);
       }
 
       return candidates.filter((candidate, index, list) => list.indexOf(candidate) === index);
