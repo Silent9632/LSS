@@ -532,6 +532,7 @@ Utgångspunkt:
 - `frontend-V4/Kontakt/Hjalp_Till_I_Lss_Story_V4.html`
 
 Detta mönster ska användas även på andra V4-infosidor om det inte finns ett tydligt skäl att avvika.
+Länkarna i denna komponent ska vara riktiga slutlänkar, inte lokala preview-länkar.
 
 ---
 

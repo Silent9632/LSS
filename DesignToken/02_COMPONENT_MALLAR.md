@@ -232,6 +232,7 @@ Regler:
 - använd samma knappfamilj på alla länkar
 - undvik kort i kort eller egna informationsrutor i footern
 - håll introtexten kort, max en mening
+- använd riktiga slutlänkar, inte lokala preview-länkar
 
 Rekommenderad mall:
 
