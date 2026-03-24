@@ -332,7 +332,7 @@ Om spacing varierar för mycket förloras `V4`-känslan snabbt.
 
 ## 10. Hero-standard
 
-Det ska finnas två tillåtna hero-typer i `V4`.
+Det ska finnas tre tillåtna hero-typer i `V4`.
 
 ### 10.1 Hero stark
 
