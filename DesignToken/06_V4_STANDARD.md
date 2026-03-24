@@ -332,7 +332,7 @@ Om spacing varierar för mycket förloras `V4`-känslan snabbt.
 
 ## 10. Hero-standard
 
-Det ska finnas två tillåtna hero-lägen.
+Det ska finnas två tillåtna hero-typer i `V4`.
 
 ### 10.1 Hero stark
 
@@ -359,6 +359,35 @@ Kännetecken:
 - ljus bakgrund
 - tydlig men lugn introduktion
 - mindre visuell dramatik
+
+### 10.3 Hero liten
+
+För:
+- informationssidor
+- kontaktsidor
+- styrelse- och personalsidor
+- FAQ-sidor
+- sidor där användaren redan vet varför den är där
+
+Kännetecken:
+- kompakt höjd
+- rubrik + kort intro
+- liten etikett eller badge
+- högst en knapp, annars ingen knapp alls
+- ingen stor bilddel om den inte fyller ett tydligt syfte
+
+Rekommenderad stil:
+
+```html
+<section style="margin-bottom:20px;padding:20px 22px;background:linear-gradient(180deg,rgba(255,255,255,0.94) 0%,rgba(247,251,255,0.90) 100%);border:1px solid rgba(0,90,153,0.12);border-radius:24px;box-shadow:0 12px 30px rgba(12,68,117,0.07);">
+  <div style="display:inline-block;margin-bottom:10px;padding:7px 11px;border-radius:999px;background:#eef6ff;border:1px solid #d7e7f7;font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#005a99;">Kontakt</div>
+  <h1 style="margin:0;font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:30px;line-height:1.08;letter-spacing:-0.03em;color:#005a99;">Styrelsen</h1>
+  <p style="margin:12px 0 0 0;max-width:58ch;font-size:15px;line-height:1.75;color:#5b6775;">Kort introduktion som snabbt förklarar sidan och hjälper användaren vidare utan att toppen tar för mycket plats.</p>
+  <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;">
+    <a href="mailto:info@ljungbyss.se" style="display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;min-height:40px;border-radius:10px;border:1px solid rgba(0,90,153,0.16);background:#f7fafc;color:#005a99;text-decoration:none;font-size:14px;font-weight:700;">Kontakta oss</a>
+  </div>
+</section>
+```
 
 ### Regel
 Alla sidor ska inte ha exakt samma hero-layout.
