@@ -519,6 +519,20 @@ Följande komponenttyper ska finnas i systemet:
 - bildkort
 - relaterade länkar-kort
 
+### Relaterade länkar-kort
+
+När `relaterade länkar-kort` används längst ner på en informationssida ska standardmönstret vara:
+- tunn topplinje
+- liten etikett, oftast `Läs vidare`
+- kort rubrik
+- en kort orienterande mening
+- en rad sekundära länkknappar
+
+Utgångspunkt:
+- `frontend-V4/Kontakt/Hjalp_Till_I_Lss_Story_V4.html`
+
+Detta mönster ska användas även på andra V4-infosidor om det inte finns ett tydligt skäl att avvika.
+
 ---
 
 ## 17. Det som inte ska låsas för hårt

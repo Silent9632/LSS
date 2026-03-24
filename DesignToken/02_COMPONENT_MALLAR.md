@@ -197,5 +197,56 @@ Rekommenderad mall:
 </section>
 ```
 
+---
+
+## 6.4) Relaterade sidor-footer (V4-standard)
+
+Använd denna komponent längst ner på informationssidor i `V4` när sidan ska peka vidare till närliggande innehåll.
+
+Utgå från footern i:
+- `frontend-V4/Kontakt/Hjalp_Till_I_Lss_Story_V4.html`
+
+Varför:
+- den är lätt att skumma
+- den känns tydlig men inte tung
+- den fungerar bra efter längre innehållssektioner
+
+Spacing och rytm:
+- `margin-top:34px`
+- `padding:22px 24px`
+- topplinje med `margin-bottom:14px`
+- etikett med `margin-bottom:8px`
+- rubrik med `margin-bottom:8px`
+- introtext med `margin-bottom:14px`
+- knapp-gap: `10px`
+
+Stil:
+- ljus kall bakgrund med mycket låg kontrast
+- tunn blå topplinje
+- liten etikett, t.ex. `Läs vidare`
+- rubrik i mindre sektionston, inte stor hero-ton
+- länkknappar som sekundära, lugna och jämna
+
+Regler:
+- ingen primär CTA här om sektionen bara ska visa vidarelänkar
+- använd samma knappfamilj på alla länkar
+- undvik kort i kort eller egna informationsrutor i footern
+- håll introtexten kort, max en mening
+
+Rekommenderad mall:
+
+```html
+<section style="margin-top:34px;padding:22px 24px;background:linear-gradient(180deg,rgba(252,253,255,0.96) 0%,rgba(247,251,255,0.9) 100%);border:1px solid rgba(0,90,153,0.10);border-radius:22px;box-shadow:0 6px 18px rgba(12,68,117,0.04);">
+  <div style="width:54px;height:2px;border-radius:999px;background:rgba(0,90,153,0.34);margin:0 0 14px 0;"></div>
+  <div style="display:inline-block;margin-bottom:8px;padding:7px 11px;border-radius:999px;background:#f3f8fd;border:1px solid rgba(0,90,153,0.10);font-size:11px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:#005a99;">Läs vidare</div>
+  <h2 style="margin:0 0 8px 0;font-family:'Trebuchet MS',Arial,Helvetica,sans-serif;font-size:22px;line-height:1.12;letter-spacing:-0.02em;color:#005a99;">Fler relevanta sidor</h2>
+  <p style="margin:0 0 14px 0;max-width:56ch;font-size:14px;line-height:1.8;color:#607080;">Fler sidor om kontakt, föreningen och vägar vidare.</p>
+  <div style="display:flex;flex-wrap:wrap;gap:10px;">
+    <a href="#" style="display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;min-height:42px;border-radius:12px;border:1px solid rgba(0,90,153,0.14);background:#f9fcff;color:#005a99;text-decoration:none;font-size:14px;font-weight:600;">Kontaktuppgifter</a>
+    <a href="#" style="display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;min-height:42px;border-radius:12px;border:1px solid rgba(0,90,153,0.14);background:#f9fcff;color:#005a99;text-decoration:none;font-size:14px;font-weight:600;">Om klubben</a>
+  </div>
+</section>
+```
+
 
 
