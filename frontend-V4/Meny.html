@@ -100,6 +100,139 @@
       color: #d7ebff;
     }
 
+    .version-row {
+      margin-top: 16px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .mode-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.26);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .mode-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 84px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #ffffff;
+      color: var(--primary-2);
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .switch-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      background: #ffffff;
+      color: var(--primary-2);
+      box-shadow: 0 10px 24px rgba(6, 31, 54, 0.14);
+    }
+
+    .version-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 12px;
+    }
+
+    .version-card {
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #f8fbff, #f2f8ff);
+      box-shadow: inset 0 0 0 1px #ffffffcc;
+    }
+
+    .version-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .version-title {
+      margin: 0 0 6px;
+      font-size: 1.02rem;
+      color: var(--text);
+    }
+
+    .version-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .version-links {
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .version-link {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #dbe9f8;
+      background: #ffffff;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .version-link:hover {
+      border-color: #9ec8ed;
+      box-shadow: 0 8px 18px rgba(10, 86, 148, 0.1);
+    }
+
+    .mini-tag {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e8f4ff;
+      border: 1px solid #bcdaf7;
+      color: #0b67b2;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+
     .sections {
       margin-top: 16px;
       display: grid;
@@ -270,6 +403,10 @@
     <section class="hero">
       <h1>LSS Meny V4</h1>
       <p class="sub">Alla länkar nedan öppnar sidorna i samma V4-miljö. Använd sök för att snabbt hitta rätt sida.</p>
+      <div class="version-row">
+        <span class="mode-pill">Aktivt läge <span class="mode-tag">V4</span></span>
+        <a class="switch-link" href="../frontend/Meny.html">Öppna originalmeny</a>
+      </div>
       <div class="toolbar">
         <input id="search" class="search" type="search" placeholder="Sök sida, t.ex. tider, baddaren, kontakt..." />
         <span id="hint" class="hint">47 sidor tillgängliga</span>
@@ -277,6 +414,25 @@
     </section>
 
     <section class="sections">
+      <article class="panel versioner" data-group="versioner">
+        <h2><span class="badge">Versioner</span> V4-index</h2>
+        <div class="version-grid">
+          <div class="version-card">
+            <div class="version-label">Nuvarande meny</div>
+            <p class="version-title">V4</p>
+            <p class="version-copy">Det här är testspåret för de sidor som byggs om i V4-designen.</p>
+          </div>
+          <div class="version-card">
+            <div class="version-label">Omgjorda sidor</div>
+            <p class="version-title">Klart i V4 just nu</p>
+            <ul class="version-links">
+              <li><a class="version-link" href="./Meny.html"><span class="link-title">Meny V4</span><span class="path">frontend-V4/Meny.html</span></a></li>
+              <li><a class="version-link" href="./Kontakt/Styrelsen.html"><span class="link-title">Styrelsen V4</span><span class="path">frontend-V4/Kontakt/Styrelsen.html</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
       <article class="panel hem" data-group="hem">
         <h2><span class="badge">Hem</span> Nyheter</h2>
         <ul class="links">
@@ -345,7 +501,7 @@
           <li><a class="link-item" href="./Kontakt/Kontaktportal.html"><span class="link-title">Kontaktportal</span><span class="path">Kontakt/Kontaktportal.html</span></a></li>
           <li><a class="link-item" href="./Kontakt/Om_Klubben.html"><span class="link-title">Om klubben</span><span class="path">Kontakt/Om_Klubben.html</span></a></li>
           <li><a class="link-item" href="./Kontakt/Historia.html"><span class="link-title">Historia</span><span class="path">Kontakt/Historia.html</span></a></li>
-          <li><a class="link-item" href="./Kontakt/Styrelsen.html"><span class="link-title">Styrelsen</span><span class="path">Kontakt/Styrelsen.html</span></a></li>
+          <li><a class="link-item" href="./Kontakt/Styrelsen.html"><span class="link-title">Styrelsen <span class="mini-tag">V4</span></span><span class="path">Kontakt/Styrelsen.html</span></a></li>
           <li><a class="link-item" href="./Kontakt/kontaktuppgifter.html"><span class="link-title">Kontaktuppgifter</span><span class="path">Kontakt/kontaktuppgifter.html</span></a></li>
           <li><a class="link-item" href="./Kontakt/Ledare.html"><span class="link-title">Bli ledare</span><span class="path">Kontakt/Ledare.html</span></a></li>
           <li><a class="link-item" href="./Kontakt/Hjalp_Till_I_Lss.html"><span class="link-title">Hjälp till i LSS</span><span class="path">Kontakt/Hjalp_Till_I_Lss.html</span></a></li>
