@@ -449,6 +449,45 @@ Exempel:
 ### Regel
 Etiketter ska hjälpa orientering, inte bli dekor för dekorens skull.
 
+### Global huvudregel för V4
+Etikett ovanför rubrik är ett valfritt verktyg för sekundär orientering, inte ett standardelement som ska finnas överallt.
+
+Det betyder:
+- om rubriken redan är tydlig ska etiketten bort
+- om etiketten bara upprepar rubriken med andra ord ska den bort
+- om etiketten tillför ny orientering som hjälper användaren förstå var den är eller vad sektionen gör kan den användas
+
+### När etikett är rätt
+Använd etikett när minst ett av dessa villkor är uppfyllt:
+- sektionen behöver visa överordnad kontext som rubriken inte själv bör bära
+- sektionen byter funktion, till exempel `Ta nästa steg`, `Vanliga frågor` eller `Läs vidare`
+- innehållet är långt, tätt eller delvis dolt och behöver extra skumhjälp
+- etiketten hjälper användaren fatta ett snabbare val mellan olika typer av innehåll
+
+### När etikett ska bort
+Använd inte etikett när:
+- H1 eller H2 redan säger samma sak tydligt
+- etiketten använder nästan samma ord som rubriken
+- sidan är enkel och självklar utan extra orientering
+- etiketten bara tillför visuell form men ingen faktisk nytta
+
+### Tillämpning i V4
+- hero/toppsektion: `0 eller 1` etikett
+- vanliga innehållssektioner: som standard ingen etikett
+- hjälps- och processsektioner: etikett tillåten när den hjälper orientering
+- relaterade sidor-footer: fast etikettmönster är tillåtet som del av komponenten
+
+### Exempel
+Bra:
+- `Läs vidare` ovanför footer med relaterade länkar
+- `Vanliga frågor` ovanför FAQ-sektion
+- `Ta nästa steg` ovanför handlingssektion
+
+Onödigt:
+- `Föreningsfakta` ovanför `Grunduppgifter`
+- `Kontakt och adress` ovanför `Hitta rätt väg in`
+- `Förening och kontakt` ovanför `Om klubben`
+
 ---
 
 ## 13. Färgroller i sektioner
