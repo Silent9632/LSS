@@ -332,7 +332,7 @@ Om spacing varierar för mycket förloras `V4`-känslan snabbt.
 
 ## 10. Hero-standard
 
-Det ska finnas tre tillåtna hero-typer i `V4`.
+Det ska finnas två tillåtna hero-typer i `V4`.
 
 ### 10.1 Hero stark
 
@@ -347,29 +347,21 @@ Kännetecken:
 - stark CTA
 - eventuell bilddel
 
-### 10.2 Hero lugn
-
-För:
-- informationssidor
-- FAQ-sidor
-- tabellsidor
-- administrativa sidor
-
-Kännetecken:
-- ljus bakgrund
-- tydlig men lugn introduktion
-- mindre visuell dramatik
-
-### 10.3 Hero liten
+### 10.2 Hero liten
 
 För:
 - informationssidor
 - kontaktsidor
 - styrelse- och personalsidor
 - FAQ-sidor
+- tabellsidor
+- administrativa sidor
 - sidor där användaren redan vet varför den är där
 
 Kännetecken:
+- ljus bakgrund
+- tydlig men lugn introduktion
+- mindre visuell dramatik
 - kompakt höjd
 - rubrik + kort intro
 - liten etikett eller badge
