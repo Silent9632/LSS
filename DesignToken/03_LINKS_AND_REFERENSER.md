@@ -66,6 +66,8 @@ Externa referenser:
 Bildreferenser:
 - Ljungby Simsällskap logotyp: https://cdn.sportadmin.se/699/h/253/da7e82b6b03eada009368cf8c5fa4e1d313be4184507039b9319f6dd4d4bcde7_L.png
 - Ljungby Simsällskap logotyp (clean, transparent PNG): https://cdn.sportadmin.se/699/h/253/f76b3ec1fcf0904d98ef45fd1ba04000e8dc40ccd90c051d5bfb81d5d157cad0_L.png
+- Hero-bild `Foto_Film_Grafik.html`: https://cdn.sportadmin.se/699/h/253/0116b4b0ddb6c6269df95bf6082a258bf61589a61540ef889305c667d16d1ad3_L.png
+- Hero-bild `Hjalp_Till_I_Lss.html`: https://cdn.sportadmin.se/699/h/253/16c0241c4dd20cd2278884235dcfc446b907783bfeee4d407d44f7bfe296e994_L.png
 
 ---
 
