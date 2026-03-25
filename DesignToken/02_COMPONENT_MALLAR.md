@@ -204,7 +204,7 @@ Rekommenderad mall:
 Använd denna komponent längst ner på informationssidor i `V4` när sidan ska peka vidare till närliggande innehåll.
 
 Utgå från footern i:
-- `frontend-V4/Kontakt/Hjalp_Till_I_Lss_Story_V4.html`
+- `frontend-V4/Kontakt/Hjalp_Till_I_Lss.html`
 
 Varför:
 - den är lätt att skumma
