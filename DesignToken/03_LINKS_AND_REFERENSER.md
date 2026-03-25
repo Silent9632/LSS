@@ -1,4 +1,4 @@
-﻿# Länkar och referenser (DesignToken)
+# Länkar och referenser (DesignToken)
 
 ## 7) Länkpolicy
 
@@ -7,7 +7,7 @@
 - Undvik relativa länkar i SportAdmin; använd full URL.
 - Lägg inte in temporära `#`-länkar i publiceringsklara sidor.
 
-Kontaktportal-specifikt:
+Kontakt-specifikt:
 - Frågor om simskola -> `https://ljungbyss.web.sportadmin.se/sida/?ID=161877`
 - Träna och tävla -> `https://ljungbyss.web.sportadmin.se/start/?ID=161577`
 
@@ -32,9 +32,8 @@ Kontaktportal-specifikt:
 - Öva i vatten: https://www.ljungbyss.se/sida/?ID=161890
 - Tider och perioder / Veckoschema: https://www.ljungbyss.se/sida/?ID=332769
 - Vanligt ställda frågor: https://ljungbyss.web.sportadmin.se/sida/?ID=436599
-- Kontaktportal: https://www.ljungbyss.se/sida/?ID=591089
+- Kontakt: https://ljungbyss.web.sportadmin.se/sida/?ID=50237
 - Om klubben: https://ljungbyss.web.sportadmin.se/sida/?ID=50236
-- Kontaktuppgifter: https://ljungbyss.web.sportadmin.se/sida/?ID=576221
 - Styrelse och ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576222
 - Bli ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576223
 - Hjälp till i LSS: https://ljungbyss.web.sportadmin.se/sida/?ID=590922
@@ -71,5 +70,6 @@ Bildreferenser:
 - Hero-bild `Hjalp_Till_I_Lss.html`: https://cdn.sportadmin.se/699/h/253/16c0241c4dd20cd2278884235dcfc446b907783bfeee4d407d44f7bfe296e994_L.png
 
 ---
+
 
 
