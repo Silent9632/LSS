@@ -604,6 +604,32 @@ När en sida uppdateras till `V4`, kontrollera:
 
 ---
 
+## 18.1 Arbetsregel för extra element
+
+Extra element som etiketter, badges, hjälprader och små infoboxar får bara användas när de gör minst en av dessa saker:
+
+1. hjälper användaren välja
+2. hjälper användaren förstå skillnaden mellan alternativ
+3. hjälper användaren ta nästa steg
+
+Om ett extra element inte gör något av detta ska det bort.
+
+Praktisk kontroll:
+
+1. Säger rubriken redan detta?
+2. Hjälper raden användaren fatta ett beslut?
+3. Är detta tydlig orientering eller bara extra form?
+4. Blir sidan faktiskt sämre om vi tar bort den?
+
+Om svaret på sista frågan är `nej`, ska elementet normalt bort.
+
+Kort huvudprincip:
+- om något upprepar, ta bort det
+- om något förtydligar, behåll det
+- om något stör hierarkin, tona ner det eller ta bort det
+
+---
+
 ## 19. Slutlig princip
 
 Om en sida känns:
