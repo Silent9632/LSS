@@ -38,6 +38,7 @@ Kontaktportal-specifikt:
 - Styrelse och ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576222
 - Bli ledare: https://ljungbyss.web.sportadmin.se/sida/?ID=576223
 - Hjälp till i LSS: https://ljungbyss.web.sportadmin.se/sida/?ID=590922
+- Foto, film och grafik / Hjälp Ljungby Simsällskap att synas bättre: https://ljungbyss.web.sportadmin.se/sida/?ID=594782
 - Webshop: https://ljungbyss.web.sportadmin.se/sida/?ID=575279
 - Ljungby SS historia: https://ljungbyss.web.sportadmin.se/sida/?ID=161875
 
