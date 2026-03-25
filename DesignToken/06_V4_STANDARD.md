@@ -48,7 +48,7 @@ Användaren ska snabbt förstå:
 - FAQ- och vägledningssidor
 
 För mer administrativa sidor:
-- använd lugnare hero
+- använd `Hero liten`
 - använd enklare sektionsflöde
 - behåll samma kortsystem, typografi och CTA-logik
 
@@ -59,7 +59,7 @@ För mer administrativa sidor:
 När en sida byggs i `V4`, använd denna ordning:
 
 1. Grundbakgrund
-2. Hero (`stark` eller `lugn`)
+2. Hero (`stark` eller `liten`)
 3. Huvudkort för första innehållsdel
 4. Underkort vid behov
 5. CTA-rad
@@ -147,7 +147,7 @@ Samma färg ska betyda ungefär samma sak på alla `V4`-sidor.
 
 ## 6. Typografi
 
-Typografin i `V4` bygger på samma rytm som `Story_V3/V4`.
+Typografin i `V4` bygger på samma rytm som tidigare `V4`-arbete i projektet.
 
 ### Bas
 - `font-family: Arial, Helvetica, sans-serif`
@@ -328,6 +328,28 @@ De får aldrig bli tyngre än innehållet.
 ### Regel
 Om spacing varierar för mycket förloras `V4`-känslan snabbt.
 
+### 9.1 Fokusblock med extra luft
+
+När en sektion är särskilt viktig och samtidigt tät, till exempel:
+- många rollkort
+- många informationskort
+- mycket text i ett sammanhang
+- ett block som användaren förväntas jämföra eller skumma noggrant
+
+då får sektionen ges extra luft runt hela blocket för att den ska separera tydligare från delarna ovanför och under.
+
+Detta används för att:
+- minska visuell konkurrens
+- göra blocket lättare att hitta
+- ge viktig information en tydligare paus i sidrytmen
+
+Standardregel:
+- vanliga huvudsektioner: `margin-bottom:20px`
+- fokusblock: kan använda större yttre luft, till exempel `margin:34px 0 32px 0`
+
+Detta ska användas sparsamt.
+Om flera block på samma sida får extra luft försvinner effekten.
+
 ---
 
 ## 10. Hero-standard
@@ -409,8 +431,8 @@ Exempel:
 Används för alternativ eller stödjande handlingar.
 
 Exempel:
-- `Kontaktportal`
-- `Se kontaktvägar`
+- `Kontakt`
+- `Kontakta oss`
 - `Läs mer`
 
 ### Standard
@@ -547,7 +569,7 @@ En användare ska kunna skumma sidan på 5-10 sekunder och förstå huvudsyftet.
 Följande komponenttyper ska finnas i systemet:
 
 - `Hero stark`
-- `Hero lugn`
+- `Hero liten`
 - huvudkort
 - underkort
 - notisruta
