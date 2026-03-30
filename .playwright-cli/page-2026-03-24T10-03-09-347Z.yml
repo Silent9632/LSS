@@ -1,0 +1,158 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: Styrelse och ansvar
+    - heading "Styrelsen" [level=1] [ref=e7]
+    - paragraph [ref=e8]: Här ser du vilka som ingår i styrelsen och vem du kontaktar för frågor om förening, ansvar och utveckling.
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - strong [ref=e11]: Det viktigaste
+        - generic [ref=e12]: Börja med uppdragen i korten om du vill hitta rätt person snabbt.
+      - generic [ref=e13]:
+        - strong [ref=e14]: Bra att veta
+        - generic [ref=e15]: För allmänna frågor går det bra att börja med styrelsens gemensamma kontaktväg.
+  - generic [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Ta nästa steg
+      - heading "Kontakt till styrelsen" [level=2] [ref=e20]
+      - paragraph [ref=e21]: Du kan kontakta rätt person direkt i korten nedan. För allmänna frågor kan du börja med styrelsens gemensamma adress.
+      - link "Maila styrelsen" [ref=e23] [cursor=pointer]:
+        - /url: mailto:info@ljungbyss.se
+      - paragraph [ref=e24]:
+        - text: "E-post:"
+        - generic [ref=e25]: info@ljungbyss.se
+    - generic [ref=e26]:
+      - strong [ref=e27]: Välj rätt kontaktväg
+      - generic [ref=e28]: Titta först på varje persons uppdrag. Det gör det lättare att kontakta rätt person direkt och få snabbare hjälp.
+  - generic [ref=e29]:
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: Personöversikt
+        - heading "Vilka som ingår i styrelsen" [level=2] [ref=e33]
+        - paragraph [ref=e34]: Här kan du snabbt se varje persons roll, uppdrag och kontaktuppgifter.
+      - generic [ref=e35]: Uppdraget i varje kort hjälper dig att välja rätt person först.
+    - generic [ref=e36]:
+      - article [ref=e37]:
+        - img "Ulrika Bondeson Crene" [ref=e38]
+        - generic [ref=e39]:
+          - generic [ref=e40]: Tf. ordförande
+          - heading "Ulrika Bondeson Crene" [level=3] [ref=e41]
+        - paragraph [ref=e42]:
+          - strong [ref=e43]: "Uppdrag:"
+          - text: Simskole-, vuxensim- och lägeransvarig.
+        - paragraph [ref=e44]:
+          - strong [ref=e45]: Vem är du?
+          - text: 56 år, engagerad föreningsmänniska i Ljungby. Har lång koppling till LSS via familjen och är även utbildad simidrottsledare och tävlingsfunktionär.
+        - paragraph [ref=e46]:
+          - strong [ref=e47]: Varför engagerar du dig?
+          - text: Engagemanget började som simförälder och har vuxit sedan första styrelseuppdraget 2015.
+        - generic [ref=e48]:
+          - link "070-249 22 14" [ref=e49] [cursor=pointer]:
+            - /url: tel:0702492214
+          - link "ulrika.bondeson.ubc@gmail.com" [ref=e50] [cursor=pointer]:
+            - /url: mailto:ulrika.bondeson.ubc@gmail.com
+      - article [ref=e51]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Ledamot
+          - heading "Olof Persson" [level=3] [ref=e58]
+        - paragraph [ref=e59]:
+          - strong [ref=e60]: "Uppdrag:"
+          - text: Kassör, sponsring och vice ordförande.
+        - paragraph [ref=e61]:
+          - strong [ref=e62]: Vem är du?
+          - text: Information kommer.
+        - paragraph [ref=e63]:
+          - strong [ref=e64]: Varför engagerar du dig?
+          - text: Information kommer.
+        - generic [ref=e65]:
+          - link "070-608 21 30" [ref=e66] [cursor=pointer]:
+            - /url: tel:0706082130
+          - link "faktura@ljungbyss.se" [ref=e67] [cursor=pointer]:
+            - /url: mailto:faktura@ljungbyss.se
+      - article [ref=e68]:
+        - img "Isabella Larsson" [ref=e69]
+        - generic [ref=e70]:
+          - generic [ref=e71]: Sekreterare
+          - heading "Isabella Larsson" [level=3] [ref=e72]
+        - paragraph [ref=e73]:
+          - strong [ref=e74]: "Uppdrag:"
+          - text: Sekreterare samt arbete i simskolekommittén och vuxenträning.
+        - paragraph [ref=e75]:
+          - strong [ref=e76]: Vem är du?
+          - text: 23 år, studerar till grundlärare fritidshem vid Linnéuniversitetet i Växjö. Engagerad i familj, vänner och föreningslivet.
+        - paragraph [ref=e77]:
+          - strong [ref=e78]: Varför engagerar du dig?
+          - text: Har varit aktiv simmare i klubben sedan ung ålder och vill bidra till utveckling och stöd i föreningen.
+        - generic [ref=e79]:
+          - link "072-215 02 05" [ref=e80] [cursor=pointer]:
+            - /url: tel:0722150205
+          - link "bellabus020514@gmail.com" [ref=e81] [cursor=pointer]:
+            - /url: mailto:bellabus020514@gmail.com
+      - article [ref=e82]:
+        - generic [ref=e87]:
+          - generic [ref=e88]: Ledamot
+          - heading "Anders Svensson" [level=3] [ref=e89]
+        - paragraph [ref=e90]:
+          - strong [ref=e91]: "Uppdrag:"
+          - text: Tävlingsansvarig.
+        - paragraph [ref=e92]:
+          - strong [ref=e93]: Vem är du?
+          - text: Född och uppvuxen i Ljungby. Kom i kontakt med simningen efter flera år i Kina.
+        - paragraph [ref=e94]:
+          - strong [ref=e95]: Varför engagerar du dig?
+          - text: Han engagerar sig i föreningar och hjälper till där det behövs. "Ingen kan göra allt men alla kan göra lite."
+        - generic [ref=e96]:
+          - link "070-623 13 58" [ref=e97] [cursor=pointer]:
+            - /url: tel:0706231358
+          - link "tavling@ljungbyss.se" [ref=e98] [cursor=pointer]:
+            - /url: mailto:tavling@ljungbyss.se
+      - article [ref=e99]:
+        - img "Petra Staberg" [ref=e100]
+        - generic [ref=e101]:
+          - generic [ref=e102]: Ledamot
+          - heading "Petra Staberg" [level=3] [ref=e103]
+        - paragraph [ref=e104]:
+          - strong [ref=e105]: "Uppdrag:"
+          - text: Personalansvarig, försäljningsansvarig samt kanslist.
+        - paragraph [ref=e106]:
+          - strong [ref=e107]: Vem är du?
+          - text: 45 år, bor i Ljungby, jobbar som personlig assistent och utbildar sig till undersköterska. Har stark familjekoppling till LSS.
+        - paragraph [ref=e108]:
+          - strong [ref=e109]: Varför engagerar du dig?
+          - text: Barnens simbakgrund väckte engagemanget. Funktionärsutbildning gav större helhetsbild och ledde vidare till styrelsearbete.
+        - generic [ref=e110]:
+          - link "070-272 94 34" [ref=e111] [cursor=pointer]:
+            - /url: tel:0702729434
+          - link "petra.staberg@hotmail.com" [ref=e112] [cursor=pointer]:
+            - /url: mailto:petra.staberg@hotmail.com
+      - article [ref=e113]:
+        - img "John Stavsberg" [ref=e114]
+        - generic [ref=e115]:
+          - generic [ref=e116]: Ledamot
+          - heading "John Stavsberg" [level=3] [ref=e117]
+        - paragraph [ref=e118]:
+          - strong [ref=e119]: "Uppdrag:"
+          - text: Utbildningsansvarig för tränare, ledare och funktionärer.
+        - paragraph [ref=e120]:
+          - strong [ref=e121]: Vem är du?
+          - text: Började simma efter en idrottsskada och fastnade för sporten. Ser simning som en skonsam träningsform för alla åldrar.
+        - paragraph [ref=e122]:
+          - strong [ref=e123]: Varför engagerar du dig?
+          - text: Simning är tillgängligt för alla och klubben är välkomnande, vilket gör engagemanget meningsfullt.
+        - generic [ref=e124]:
+          - link "073-523 25 84" [ref=e125] [cursor=pointer]:
+            - /url: tel:0735232584
+          - link "utbildning@ljungbyss.se" [ref=e126] [cursor=pointer]:
+            - /url: mailto:utbildning@ljungbyss.se
+  - generic [ref=e127]:
+    - generic [ref=e128]: Läs vidare
+    - heading "Relaterade sidor" [level=2] [ref=e129]
+    - paragraph [ref=e130]: För fler kontaktvägar och mer om föreningen.
+    - generic [ref=e131]:
+      - link "Kontaktuppgifter" [ref=e132] [cursor=pointer]:
+        - /url: https://ljungbyss.web.sportadmin.se/sida/?ID=576221
+      - link "Kontaktportal" [ref=e133] [cursor=pointer]:
+        - /url: https://www.ljungbyss.se/sida/?ID=591089
+      - link "Om klubben" [ref=e134] [cursor=pointer]:
+        - /url: https://ljungbyss.web.sportadmin.se/sida/?ID=50236
+      - link "Historia" [ref=e135] [cursor=pointer]:
+        - /url: https://ljungbyss.web.sportadmin.se/sida/?ID=161875

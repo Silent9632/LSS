@@ -1,0 +1,104 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e9]: Hjälp till i Ljungby SS
+      - heading "En liten insats kan ge klubben väldigt mycket." [level=1] [ref=e10]
+      - paragraph [ref=e11]: Det här är en mer redaktionell experimentversion. Tanken är att sidan ska kännas mindre som en infosida och mer som en varm inbjudan att vara med, utan att tappa tydlighet eller SportAdmin-säker struktur.
+      - generic [ref=e12]:
+        - link "Jag vill höra mer" [ref=e13] [cursor=pointer]:
+          - /url: mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS
+        - link "Kontaktportal" [ref=e14] [cursor=pointer]:
+          - /url: https://www.ljungbyss.se/sida/?ID=591089
+      - generic [ref=e15]:
+        - generic [ref=e16]: Börja smått
+        - generic [ref=e17]: Du får stöd
+        - generic [ref=e18]: Det kan vara enkelt
+    - generic [ref=e19]:
+      - img "Funktionärer och ideella krafter vid bassängkanten" [ref=e20]
+      - generic [ref=e22]:
+        - strong [ref=e23]: Liten start, stor effekt
+        - generic [ref=e24]: Det kan räcka att hjälpa till vid ett tillfälle eller ta något praktiskt som gör dagen lättare för alla runt verksamheten.
+  - generic [ref=e26]:
+    - article [ref=e27]:
+      - generic [ref=e28]: "01"
+      - heading "Du behöver inte komma med ett färdigt svar" [level=2] [ref=e29]
+      - paragraph [ref=e30]: Du kan börja med att bara vara nyfiken. Det går att höra av sig först och bestämma mer sen.
+    - article [ref=e31]:
+      - generic [ref=e32]: "02"
+      - heading "Det är lättare att bidra än många tror" [level=2] [ref=e33]
+      - paragraph [ref=e34]: Mycket handlar om små, tydliga uppgifter som gör stor skillnad när fler hjälps åt.
+    - article [ref=e35]:
+      - generic [ref=e36]: "03"
+      - heading "Sidan får gärna kännas som en inbjudan" [level=2] [ref=e37]
+      - paragraph [ref=e38]: Det här experimentet testar mer atmosfär, mjukare kontraster och mer redaktionell rytm.
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]: Det här kan det vara
+      - heading "Praktiskt, tryggt och ibland nästan osynligt viktigt." [level=2] [ref=e43]
+      - paragraph [ref=e44]: En del av det som bär en förening märks inte alltid utåt. Det kan vara personer som ordnar, tar emot, hjälper till runt bassängen eller finns där när det behövs.
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - strong [ref=e47]: Exempel på hjälp
+        - generic [ref=e48]: Hjälpa till vid tävlingar, avlasta i praktiska saker eller bidra med något du redan är bra på.
+      - generic [ref=e49]:
+        - strong [ref=e50]: Trygg nivå
+        - generic [ref=e51]: Du behöver inte hoppa in i något stort. Det går att börja med en mindre insats och känna efter först.
+  - generic [ref=e53]:
+    - generic [ref=e54]:
+      - generic [ref=e55]: Statement
+      - heading "När fler hjälper till lite blir hela klubben lättare att bära." [level=2] [ref=e56]
+    - paragraph [ref=e58]: Det här blocket är medvetet byggt som en visuell paus i sidan. Det bryter av, skapar rytm och ger sidan mer karaktär utan att bli skrikig.
+  - generic [ref=e60]:
+    - article [ref=e61]:
+      - generic [ref=e62]: Så går det till
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]: "1"
+          - generic [ref=e66]:
+            - heading "Du hör av dig" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Inte för att binda upp dig hårt, utan för att öppna dörren till ett första steg.
+        - generic [ref=e69]:
+          - generic [ref=e70]: "2"
+          - generic [ref=e71]:
+            - heading "Ni hittar en rimlig nivå" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Det gör att sidan känns mindre krävande och mer mänsklig.
+        - generic [ref=e74]:
+          - generic [ref=e75]: "3"
+          - generic [ref=e76]:
+            - heading "Du provar utan press" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Om det känns bra kan du fortsätta. Om inte, så var första steget ändå rätt.
+    - complementary [ref=e79]:
+      - img "Lugn vy över bassängen i simhallen" [ref=e80]
+      - strong [ref=e81]: Visuell paus
+      - heading "Här blir sidan lite varmare och lite mindre “föreningsmall”." [level=2] [ref=e82]
+      - paragraph [ref=e83]: "Det här är också en designidé: att låta vissa partier kännas mer redaktionella än administrativa."
+  - generic [ref=e84]:
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - generic [ref=e87]: Vanliga frågor
+        - heading "Vi kan fortfarande vara tydliga, även när sidan känns mer designad." [level=2] [ref=e88]
+      - generic [ref=e89]: Ett sätt att hålla ihop design och funktion är att avsluta med frågor och svar. Det minskar osäkerhet och gör nästa steg enklare.
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - group [ref=e92]:
+          - generic "Måste jag veta exakt vad jag vill hjälpa till med?" [ref=e93] [cursor=pointer]
+          - generic [ref=e94]: Nej. Det räcker att du vill bidra och vill höra mer. Sedan hittar ni rätt nivå tillsammans.
+        - group [ref=e95]:
+          - generic "Kan jag börja väldigt smått?" [ref=e96] [cursor=pointer]
+      - generic [ref=e97]:
+        - strong [ref=e98]: Mikro-copy
+        - paragraph [ref=e99]:
+          - text: "En liten men bra detalj är att lägga in en trygg rad nära CTA:"
+          - strong [ref=e100]: “Du förbinder dig inte till något genom att höra av dig.”
+  - generic [ref=e102]:
+    - generic [ref=e103]:
+      - generic [ref=e104]: Slutsektion
+      - heading "Om du gillar riktningen här kan vi bygga vidare på den." [level=2] [ref=e105]
+      - paragraph [ref=e106]: "Det här experimentet testar mer karaktär: mörkare hero, varmare accenter, tydligare pauser och lite mer magasin-känsla."
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - link "Öppna mailapp" [ref=e109] [cursor=pointer]:
+          - /url: mailto:info@ljungbyss.se?subject=Jag%20vill%20hj%C3%A4lpa%20till%20i%20LSS
+        - link "Kontaktportal" [ref=e110] [cursor=pointer]:
+          - /url: https://www.ljungbyss.se/sida/?ID=591089
+      - generic [ref=e111]: info@ljungbyss.se
