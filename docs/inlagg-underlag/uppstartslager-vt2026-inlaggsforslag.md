@@ -38,6 +38,10 @@ Reservbilder:
 - Bild 4: https://cdn.sportadmin.se/699/h/253/7bd51131340925cef59c4e7829a5d4b39eed3f26d49fbed37163d5c3a16b44c0_L.jpeg
 - Bild 5: https://cdn.sportadmin.se/699/h/253/d0f2082b03758798e2509638cbaf42172e907e89817d067a9255cd93be1fc61f_L.jpeg
 
+## Sponsorlogga
+
+- Sundström Safety AB: https://cdn.sportadmin.se/699/h/253/66b043fe78968ebb41039bfb563bf2fb9801a8a37a3d04edd853c804c971684f_L.jpg
+
 ## Färdig caption för Instagram och Facebook
 
 ### Version 1 - balanserad
