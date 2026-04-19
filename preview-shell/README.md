@@ -6,7 +6,7 @@ Användning:
 
 - Öppna `SportAdmin_Local_Preview.html`
 - Den laddar som standard:
-  - `../experiments/lss-sportadmin-visual-01/05_Visual_Story_Copy_Refined.html`
+  - `../frontend/Kontakt/Hjalp_Till_I_Lss.html`
 - Du kan byta innehåll via query-parametern `content`
 
 Exempel:

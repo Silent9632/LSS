@@ -1,11 +1,11 @@
-﻿# Design Tokens (Flyttad)
+# Design Tokens (Flyttad)
 
 ## STOPPREGEL: UTF-8 och svenska tecken
 - Alla filer ska vara UTF-8.
-- AnvÃ¤nd alltid riktiga svenska tecken: Ã¥, Ã¤, Ã¶, Ã…, Ã„, Ã-.
-- Felkodade tecken mÃ¥ste korrigeras direkt.
+- Använd alltid riktiga svenska tecken: å, ä, ö, Å, Ä, Ö.
+- Felkodade tecken måste korrigeras direkt.
 
-Design-token-dokumentationen Ã¤r flyttad till `DesignToken/` fÃ¶r bÃ¤ttre struktur och snabbare Ã¶verblick.
+Design-token-dokumentationen är flyttad till `DesignToken/` för bättre struktur och snabbare överblick.
 
 Startpunkt:
 - `DesignToken/INDEX.md`
@@ -18,5 +18,4 @@ Filer:
 - `DesignToken/05_CHANGELOG.md`
 
 Regel:
-- Vid ny sida i `frontend` ska `frontend/Meny.html` uppdateras i samma Ã¤ndring, om inte anvÃ¤ndaren uttryckligen sÃ¤ger nÃ¥got annat.
-
+- Vid ny sida i `frontend` ska `frontend/Meny.html` uppdateras i samma ändring, om inte användaren uttryckligen säger något annat.
